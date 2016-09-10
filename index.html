@@ -35,52 +35,80 @@ ul.a {list-style-type:disc;}
 </head>
 <body>
 
-
-    <div class="page-header">
-        <h1>Welcome to the webpage of Pedro Parracho <small>by Pedro Parracho</small></h1>
-    </div>
+    <header class="jumbotron">
+        <!-- Main component for a primary marketing message or call to action -->
+        <div class="container">
+            <div class="row row-header">
+                <div class="col-xs-12 col-sm-8">
+                    <h1>Webpage of Pedro Parracho</h1>
+                    <p>Welcome!</p>
+                </div>
+            </div>
+        </div>
+    </header>
     
     <div class="container">
+        <div class="page-header"><h1>My Projects</h1></div>
+        <div class="page-header"><h2>MacOS X</h2></div>
+        <h2>Rename photos in MacOs X</h2>
+        <p>Rename files scripts for mac OS X, it will take a bunch of files and will change their name according with the scheme: <samp>aaaa.mm.dd.filename.sequence.jpeg</samp></p>
+        The date field is created using the file creation time, the filename is a text string requested by the script via dialog window, sequence a is a sequential number generated.<br/>
+        The files are here:
+        <ul class="a">
+            <li><a href="files/mac/Rename.workflow.zip">workflow</a>, with a dialog box will appear asking for the files to be renamed;</li>
+            <li><a href="files/mac/Rename.app.zip">application</a>, files can be dragged and dropped over the application;</li>
+            <li><a href="files/mac/BatchRename.workflow.zip">Service</a> (file to be placed in <code>$HOME/Library/Services/</code>) this will pick current selected files for rename.</li>
+        </ul>
+        
+    </div>
+
+    <div class="container">
+        <div class="page-header"><h1>Links</h1></div>
+    
         <div class="row ">
-            <div class="col-xs-12">
+            <div class="col-xs-12 col-sm-8 col-sm-push-1">
                 <div class="panel panel-primary">
                     <div class="panel-heading"><h3 class="panel-title">Important Links</h3></div>
                     <div class="panel-body">
                           <ul class="a">
-                              <li>Page with links for CMS <a href="CMS_bookmarks.html">CMS_bookmarks.html</a>
-                              <li>ECAL Doxygen <a href="http://cms-ecaldaq-doxygen.web.cern.ch/cms-ecaldaq-doxygen/">http://cms-ecaldaq-doxygen.web.cern.ch/cms-ecaldaq-doxygen/</a>
                               <li>My github resume <a href="http://resume.github.io/?berserck">http://resume.github.io/?berserck</a>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="panel panel-primary">
+                    <div class="panel-heading"><h3 class="panel-title">Viagens <small>Links para as fotos</small></h3></div>
+                    <div class="panel-body">
+                        <div class="list-group">
+                            <a class="list-group-item text-center" href="trips/fotos/at/innsbruck/index.html">Innsbruck</a>
+                            <a class="list-group-item text-center" href="trips/fotos/pt/acores/index.html">Terceira</a>
+                            <a class="list-group-item text-center" href="trips/fotos/si/album/index.html">Eslovenia</a>
+                            <a class="list-group-item text-center" href="trips/fotos/de/Heidelberg/index.html">Heidelberg</a>
+                            <a class="list-group-item text-center" href="trips/fotos/Austin/index.html">Austin</a>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="panel panel-primary">
+                    <div class="panel-heading"><h3 class="panel-title">CMS links</h3></div>
+                    <div class="panel-body">
+                          <ul class="a">
+                              <li><a href="CMS_bookmarks.html">Page with links my bookmarks for CMS</a></li>
+                              <li>ECAL Doxygen <a href="http://cms-ecaldaq-doxygen.web.cern.ch/cms-ecaldaq-doxygen/">http://cms-ecaldaq-doxygen.web.cern.ch/cms-ecaldaq-doxygen/</a></li>
+                              <li><a href="https://twiki.cern.ch/twiki/bin/view/Main/PedroParracho?forceShow=1">My TWIKI page</a></li>
+                              <li><a href="files/cfg.xml">Jedit mode file for CMS config files</a></li>
+                              <li><a href="colorV2/color.html">Color DB GUI diff</a></li>
                         </ul>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <div class="container"><div class="row"><div class="col-xs-12">
-        <div class="panel panel-primary">
-            <div class="panel-heading"><h3 class="panel-title">Viagens <small>Links para as fotos</small></h3></div>
-            <div class="panel-body">
-                <div class="list-group">
-                    <a class="list-group-item" href="trips/fotos/at/innsbruck/index.html">Innsbruck</a>
-                    <a class="list-group-item" href="trips/fotos/pt/acores/index.html">Terceira</a>
-                    <a class="list-group-item" href="trips/fotos/si/album/index.html">Eslovenia</a>
-                    <a class="list-group-item" href="trips/fotos/de/Heidelberg/index.html">Heidelberg</a>
-                    <a class="list-group-item" href="trips/fotos/Austin/index.html">Austin</a>
-                </div>
-            </div>
-        </div>
-    </div></div></div>
-
 
 <h1>Other links...</h1>
 <ul class="a">
 <li><a href="ithaka/index.htm">Weather balloon: Ithaka project </a><br>
-<li><a href="files/cfg.xml">Jedit mode file for CMS config files</a><br>
-<li><a href="https://twiki.cern.ch/twiki/bin/view/Main/PedroParracho">My TWIKI page</a><br>
-<li><a href="CMS_bookmarks.html">My CMS links</a><br>
 <li><a href="stopwatch/stopwatch.html">Stopwatch</a><br>
-<!-- <li><a href="color.html">Color diff</a><br> -->
-<li><a href="colorV2/color.html">Color DB GUI diff</a><br>
 </ul>
 
 <h1>Files</h1>
@@ -91,16 +119,7 @@ ul.a {list-style-type:disc;}
 </ul>
 
 <h1> Mac OS X </h1>
-<h2>Rename photos in mac OS X:</h2>
-Rename files scripts for mac OS X, it will take a bunch of files and will change their name according with the scheme:<br>
-aaaa.mm.dd.filename.sequence.jpeg<br>
-The date field is created using the file creation time, the filename is a text string requested by the script via dialog window, sequence a is a sequential number generated.
-The files are here:
-<ul class="a">
-<li><a href="files/mac/Rename.workflow.zip">workflow</a>, with a dialog box will appear asking for the files to be renamed;<br>
-<li><a href="files/mac/Rename.app.zip">application</a>, files can be dragged and dropped over the application;<br>
-<li><a href="files/mac/BatchRename.workflow.zip">Service</a>(file to be placed in $HOME/Library/Services/) this will pick current selected files for rename<br>
-</ul>
+
 
 <h2>Rotate photos in mac OS X:</h2>
 It will rotate the image left or right (Service, extract file to $HOME/Library/Services/ )<br>
@@ -122,7 +141,6 @@ It will rotate the image left or right (Service, extract file to $HOME/Library/S
 </ul>
 
 <br>Last changed 2014.09.06<br>
-<a href="https://www.mozilla.org/en-US/plugincheck/"><img id="mozilla_plugin_checker_badge" src="https://www.mozilla.org/img/covehead/plugincheck/wb/en-US/180_150/loading.png" width="180" height="150" alt="We can check your plugins and stuff" border="0" /></a><script type="text/javascript">var pfsNextImage = "https://www.mozilla.org/img/covehead/plugincheck/wb/en-US/180_150/safe.png";var pfsUpdateImage = "https://www.mozilla.org/img/covehead/plugincheck/wb/en-US/180_150/upyourplug.png";</script><script src="https://www.mozilla.org/js/plugincheck_badge.js"></script>
 
  <!--[if !(lt IE 8)]><!-->
  <script type="text/javascript">
