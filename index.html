@@ -2,18 +2,6 @@
 <html lang="en">
 <head>
 <style>
-/*
-h1
-{
-color:black;
-text-align:center;
-}
-*/
-body {
-    background-color:#fff8dc;
-    margin-left:50px;
-}
-ul.a {list-style-type:disc;}
 
 </style>
 
@@ -48,8 +36,35 @@ ul.a {list-style-type:disc;}
     </header>
 
     <div class="container">
-        <div class="page-header"><h1>My Projects</h1></div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-8">
+            <div class="page-header"><h1 class="text-primary">Links</h1></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-8 col-sm-push-2">
+                <div class="panel panel-default">
+                    <div class="panel-heading"><h3 class="panel-title">Important Links</h3></div>
+                    <div class="panel-body">
+                          <ul>
+                              <li><a href="https://recipes.parracho.tk/">Recipes website</a></li>
+                              <li>My github resume <a href="http://resume.github.io/?berserck">http://resume.github.io/?berserck</a></li>
+                              <li><a href="ithaka/index.htm">Weather balloon: Ithaka project</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-8">
+                <div class="page-header"><h1 class="text-primary">My Projects</h1></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-8 col-sm-push-1">
         <div class="page-header"><h2>MacOS X</h2></div>
+            </div>
+        </div>
         <div class="row">
             <div class="col-xs-12 col-sm-8 col-sm-push-2">
                 <div class="panel panel-default">
@@ -58,7 +73,7 @@ ul.a {list-style-type:disc;}
                         <p>Rename files scripts for mac OS X, it will take a bunch of files and will change their name according with the scheme: <samp>aaaa.mm.dd.filename.sequence.jpeg</samp></p>
                         <p>The date field is created using the file creation time, the filename is a text string requested by the script via dialog window, sequence a is a sequential number generated.</p>
                         <p>The files are here:</p>
-                        <ul class="a">
+                        <ul>
                             <li><a href="files/mac/Rename.workflow.zip">workflow</a>, with a dialog box will appear asking for the files to be renamed;</li>
                             <li><a href="files/mac/Rename.app.zip">application</a>, files can be dragged and dropped over the application;</li>
                             <li><a href="files/mac/BatchRename.workflow.zip">Service</a> (file to be placed in <code>$HOME/Library/Services/</code>) this will pick current selected files for rename.</li>
@@ -73,7 +88,7 @@ ul.a {list-style-type:disc;}
                     <div class="panel-heading"><h3 class="panel-title">Rotate photos in mac OS X:</h3></div>
                     <div class="panel-body">
                         <p>It will rotate the image left or right (it is a service, you need to extract file to <code>$HOME/Library/Services/</code>)</p>
-                        <ul class="a">
+                        <ul>
                             <li><a href="http://dl.dropbox.com/u/6205438/mySoft/macOSx/ImageServices/RotateRight.tgz">Rotate Right</a></li>
                             <li><a href="http://dl.dropbox.com/u/6205438/mySoft/macOSx/ImageServices/RotateLeft.tgz">Rotate Left</a></li>
                         </ul>
@@ -87,7 +102,7 @@ ul.a {list-style-type:disc;}
                     <div class="panel-heading"><h3 class="panel-title">Resize photos in mac OS X:</h3></div>
                     <div class="panel-body">
                         <p>(It is a service, extract file to <code>$HOME/Library/Services/</code>)</p>
-                        <ul class="a">
+                        <ul>
                             <li><a href="http://dl.dropbox.com/u/6205438/mySoft/macOSx/ImageServices/ResizeImages.tgz">Resize images</a></li>
                         </ul>
                     </div>
@@ -100,7 +115,7 @@ ul.a {list-style-type:disc;}
                     <div class="panel-heading"><h3 class="panel-title">tkalc:</h3></div>
                     <div class="panel-body">
                         <p> I took the application <a href="http://www.folgmann.de/en/software/tkalc/">tkalc</a> written in Tcl and I repackaged it to be shown as a real application in MacOs, instead of being shown as a Tcl script.</p>
-                        <ul class="a">
+                        <ul>
                             <li><a href="files/mac/tkcalck.app.zip">tkalc in an app format</a></li>
                         </ul>
                     </div>
@@ -108,8 +123,12 @@ ul.a {list-style-type:disc;}
             </div>
         </div>
 
-
-        <div class="page-header"><h2>Stardict</h2></div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-8 col-sm-push-1">
+                <div class="page-header"><h2>Stardict</h2></div>
+            </div>
+        </div>
+        
         <div class="row">
             <div class="col-xs-12 col-sm-8 col-sm-push-2">
                 <div class="panel panel-default">
@@ -120,7 +139,12 @@ ul.a {list-style-type:disc;}
                 </div>
             </div>
         </div>
-        <div class="page-header"><h2>iPod</h2></div>
+        
+        <div class="row">
+            <div class="col-xs-12 col-sm-8 col-sm-push-1">
+                <div class="page-header"><h2>iPod</h2></div>
+            </div>
+        </div>
         <div class="row">
             <div class="col-xs-12 col-sm-8 col-sm-push-2">
                 <div class="panel panel-default">
@@ -134,30 +158,26 @@ ul.a {list-style-type:disc;}
             </div>
         </div>
 
-
-        <div class="page-header"><h2>Tests/Examples</h2></div>
-        <ul>
-            <li>A nice example of a <a href="stopwatch/stopwatch.html">Stopwatch</a> written in javascript</li>
-            <li>A <a href="test.html">test page</a></li>
-        </ul>
-
-    </div>
-
-    <div class="container">
-        <div class="page-header"><h1>Links</h1></div>
-
+        <div class="row">
+            <div class="col-xs-12 col-sm-8">
+                <div class="page-header"><h1 class="text-primary">Tests/Examples</h1></div>
+            </div>
+        </div>
         <div class="row">
             <div class="col-xs-12 col-sm-8 col-sm-push-2">
-                <div class="panel panel-default">
-                    <div class="panel-heading"><h3 class="panel-title">Important Links</h3></div>
-                    <div class="panel-body">
-                          <ul class="a">
-                              <li>My github resume <a href="http://resume.github.io/?berserck">http://resume.github.io/?berserck</a></li>
-                              <li><a href="ithaka/index.htm">Weather balloon: Ithaka project</a></li>
-                        </ul>
-                    </div>
-                </div>
-
+                <ul>
+                    <li>A nice example of a <a href="stopwatch/stopwatch.html">Stopwatch</a> written in javascript</li>
+                    <li>A <a href="test.html">test page</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-8">
+        <div class="page-header"><h1 class="text-primary">Photos</h1></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-8 col-sm-push-2">
                 <div class="panel panel-default">
                     <div class="panel-heading"><h3 class="panel-title">Viagens <small>Links para as fotos</small></h3></div>
                     <div class="panel-body">
@@ -170,11 +190,19 @@ ul.a {list-style-type:disc;}
                         </div>
                     </div>
                 </div>
-
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-8">
+                <div class="page-header"><h1 class="text-primary">Old Stuff</h1></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-8 col-sm-push-2">
                 <div class="panel panel-default">
                     <div class="panel-heading"><h3 class="panel-title">CMS links</h3></div>
                     <div class="panel-body">
-                          <ul class="a">
+                          <ul>
                               <li><a href="CMS_bookmarks.html">Page with links my bookmarks for CMS</a></li>
                               <li>ECAL Doxygen <a href="http://cms-ecaldaq-doxygen.web.cern.ch/cms-ecaldaq-doxygen/">http://cms-ecaldaq-doxygen.web.cern.ch/cms-ecaldaq-doxygen/</a></li>
                               <li><a href="https://twiki.cern.ch/twiki/bin/view/Main/PedroParracho?forceShow=1">My TWIKI page</a></li>
@@ -190,7 +218,7 @@ ul.a {list-style-type:disc;}
     <footer class="row-footer">
       <div class="container">
           <div class="col-xs-12">
-              <p align=center>Last changed 2016.09.10 © Copyright 2016 Pedro Parracho</p>
+              <p align=center>Last changed 2016.09.12 © Copyright 2016 Pedro Parracho</p>
           </div>
       </div>
     </footer>
