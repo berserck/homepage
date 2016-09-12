@@ -16,13 +16,13 @@ body {
 ul.a {list-style-type:disc;}
 
 </style>
-    
+
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    
+
     <title>Pedro Parracho's Personal page</title>
-    
+
 <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
@@ -31,7 +31,7 @@ ul.a {list-style-type:disc;}
 
 <!-- Latest compiled and minified JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-    
+
 </head>
 <body>
 
@@ -40,43 +40,97 @@ ul.a {list-style-type:disc;}
         <div class="container">
             <div class="row row-header">
                 <div class="col-xs-12 col-sm-8">
-                    <h1>Webpage of Pedro Parracho</h1>
+                    <h1>Web page of Pedro Parracho</h1>
                     <p>Welcome!</p>
                 </div>
             </div>
         </div>
     </header>
-    
+
     <div class="container">
         <div class="page-header"><h1>My Projects</h1></div>
         <div class="page-header"><h2>MacOS X</h2></div>
-        <h2>Rename photos in MacOs X</h2>
-        <p>Rename files scripts for mac OS X, it will take a bunch of files and will change their name according with the scheme: <samp>aaaa.mm.dd.filename.sequence.jpeg</samp></p>
-        The date field is created using the file creation time, the filename is a text string requested by the script via dialog window, sequence a is a sequential number generated.<br/>
-        The files are here:
-        <ul class="a">
-            <li><a href="files/mac/Rename.workflow.zip">workflow</a>, with a dialog box will appear asking for the files to be renamed;</li>
-            <li><a href="files/mac/Rename.app.zip">application</a>, files can be dragged and dropped over the application;</li>
-            <li><a href="files/mac/BatchRename.workflow.zip">Service</a> (file to be placed in <code>$HOME/Library/Services/</code>) this will pick current selected files for rename.</li>
+        <div class="row">
+            <div class="col-xs-12 col-sm-6">
+                <div class="panel panel-default">
+
+                </div>
+                <h3>Rename photos in MacOs X</h3>
+                <p>Rename files scripts for mac OS X, it will take a bunch of files and will change their name according with the scheme: <samp>aaaa.mm.dd.filename.sequence.jpeg</samp></p>
+                The date field is created using the file creation time, the filename is a text string requested by the script via dialog window, sequence a is a sequential number generated.<br/>
+                The files are here:
+                <ul class="a">
+                    <li><a href="files/mac/Rename.workflow.zip">workflow</a>, with a dialog box will appear asking for the files to be renamed;</li>
+                    <li><a href="files/mac/Rename.app.zip">application</a>, files can be dragged and dropped over the application;</li>
+                    <li><a href="files/mac/BatchRename.workflow.zip">Service</a> (file to be placed in <code>$HOME/Library/Services/</code>) this will pick current selected files for rename.</li>
+                </ul>
+            </div>
+            <div class="col-xs-12 col-sm-6">
+                <h3>Rotate photos in mac OS X:</h3>
+                <p>It will rotate the image left or right (it is a service, you need to extract file to <code>$HOME/Library/Services/</code>)</p>
+                <ul class="a">
+                    <li><a href="http://dl.dropbox.com/u/6205438/mySoft/macOSx/ImageServices/RotateRight.tgz">Rotate Right</a></li>
+                    <li><a href="http://dl.dropbox.com/u/6205438/mySoft/macOSx/ImageServices/RotateLeft.tgz">Rotate Left</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-6">
+                <h3>Resize photos in mac OS X:</h3>
+                <p>(It is a service, extract file to <code>$HOME/Library/Services/</code>)</p>
+                <ul class="a">
+                    <li><a href="http://dl.dropbox.com/u/6205438/mySoft/macOSx/ImageServices/ResizeImages.tgz">Resize images</a></li>
+                </ul>
+            </div>
+            <div class="col-xs-12 col-sm-6">
+                <h3>tkalc:</h3>
+                <p> I took the application <a href="http://www.folgmann.de/en/software/tkalc/">tkalc</a> written in Tcl and I repackaged it to be shown as a real application in MacOs, instead of being shown as a Tcl script.</p>
+                <ul class="a">
+                    <li><a href="files/mac/tkcalck.app.zip">tkalc in an app format</a></li>
+                </ul>
+            </div>
+        </div>
+
+
+        <div class="page-header"><h2>Stardict</h2></div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-6">
+                <p>I converted the CIA fact world book 2009 into a stardict format, <a href="files/starDict_CIA09.zip">here</a> is the file.</p>
+            </div>
+        </div>
+        <div class="page-header"><h2>iPod</h2></div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-6">
+                <p> Here is a script that can be copied into the iPod and then it will synchronize your google calendars with the iPod calendar.</p>
+                <a href="files/iPodCalendar.zip">Synchronize iPod with google calendar</a>.
+            </div>
+        </div>
+
+
+        <div class="page-header"><h2>Tests/Examples</h2></div>
+        <ul>
+            <li>A nice example of a <a href="stopwatch/stopwatch.html">Stopwatch</a> written in javascript</li>
+            <li>A <a href="test.html">test page</a></li>
         </ul>
-        
+
     </div>
 
     <div class="container">
         <div class="page-header"><h1>Links</h1></div>
-    
-        <div class="row ">
+
+        <div class="row">
             <div class="col-xs-12 col-sm-8 col-sm-push-1">
-                <div class="panel panel-primary">
+                <div class="panel panel-default">
                     <div class="panel-heading"><h3 class="panel-title">Important Links</h3></div>
                     <div class="panel-body">
                           <ul class="a">
-                              <li>My github resume <a href="http://resume.github.io/?berserck">http://resume.github.io/?berserck</a>
+                              <li>My github resume <a href="http://resume.github.io/?berserck">http://resume.github.io/?berserck</a></li>
+                              <li><a href="ithaka/index.htm">Weather balloon: Ithaka project</a></li>
                         </ul>
                     </div>
                 </div>
-                
-                <div class="panel panel-primary">
+
+                <div class="panel panel-default">
                     <div class="panel-heading"><h3 class="panel-title">Viagens <small>Links para as fotos</small></h3></div>
                     <div class="panel-body">
                         <div class="list-group">
@@ -88,8 +142,8 @@ ul.a {list-style-type:disc;}
                         </div>
                     </div>
                 </div>
-        
-                <div class="panel panel-primary">
+
+                <div class="panel panel-default">
                     <div class="panel-heading"><h3 class="panel-title">CMS links</h3></div>
                     <div class="panel-body">
                           <ul class="a">
@@ -105,51 +159,13 @@ ul.a {list-style-type:disc;}
         </div>
     </div>
 
-<h1>Other links...</h1>
-<ul class="a">
-<li><a href="ithaka/index.htm">Weather balloon: Ithaka project </a><br>
-<li><a href="stopwatch/stopwatch.html">Stopwatch</a><br>
-</ul>
+    <footer class="row-footer">
+      <div class="container">
+          <div class="col-xs-12">
+              <p align=center>Last changed 2016.09.10 © Copyright 2016 Pedro Parracho</p>
+          </div>
+      </div>
+    </footer>
 
-<h1>Files</h1>
-<ul class="a">
-<li><a href="files/iPodCalendar.zip">Synchronize iPod with google calendar</a><br>
-<li><a href="test.html">test page</a><br>
-<li><a href="files/starDict_CIA09.zip">StarDict CIA fact world book 2009</a><br>
-</ul>
-
-<h1> Mac OS X </h1>
-
-
-<h2>Rotate photos in mac OS X:</h2>
-It will rotate the image left or right (Service, extract file to $HOME/Library/Services/ )<br>
-<ul class="a">
-<li><a href="http://dl.dropbox.com/u/6205438/mySoft/macOSx/ImageServices/RotateRight.tgz">Rotate Right</a>
-<li><a href="http://dl.dropbox.com/u/6205438/mySoft/macOSx/ImageServices/RotateLeft.tgz">Rotate Left</a>
-</ul>
-
-<h2>Resize photos in mac OS X:</h2>
-(Service, extract file to $HOME/Library/Services/ )<br>
-<ul class="a">
-<li><a href="http://dl.dropbox.com/u/6205438/mySoft/macOSx/ImageServices/ResizeImages.tgz">Resize images</a>
-</ul>
-
-
-<h2>tkalc:</h2>
-<ul class="a">
-<li><a href="files/mac/tkcalck.app.zip">tkalc in a app format</a><br>
-</ul>
-
-<br>Last changed 2014.09.06<br>
-
- <!--[if !(lt IE 8)]><!-->
- <script type="text/javascript">
- (function(){
-                var e = document.createElement('script'); e.type='text/javascript'; e.async = true;
-                e.src = 'https://www.eff.org/ngw/widget.min.js';
-                var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(e, s);
-              })();
-            </script>
-            <!--<![endif]-->
 </body>
 </html>
