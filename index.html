@@ -17,11 +17,13 @@
 <!-- Optional theme -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <!-- Latest compiled and minified JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
 </head>
-<body>
+<body data-spy="scroll" data-target="#myScrollspy" data-offset="200">
 
     <header class="jumbotron">
         <div class="container">
@@ -36,8 +38,10 @@
 
     <div class="container">
         <div class="row">
-            <div class="col-xs-12 col-sm-8">
-            <div class="page-header"><h1 class="text-primary">Links</h1></div>
+            <div class="col-xs-12 col-sm-10">
+                <div class="row">
+                    <div class="col-xs-12">
+            <div id="links" class="page-header"><h1 class="text-primary">Links</h1></div>
             </div>
             <div class="col-xs-12 col-sm-8 col-sm-push-2">
                 <div class="panel panel-default">
@@ -52,7 +56,7 @@
                 </div>
             </div>
             <div class="col-xs-12 col-sm-8">
-                <div class="page-header"><h1 class="text-primary">My Projects</h1></div>
+                <div class="page-header"><h1 id="projects" class="text-primary">My Projects</h1></div>
             </div>
             <div class="col-xs-12 col-sm-8 col-sm-push-1">
                 <div class="page-header"><h2>MacOS X</h2></div>
@@ -136,7 +140,7 @@
             </div>
 
             <div class="col-xs-12 col-sm-8">
-                <div class="page-header"><h1 class="text-primary">Tests/Examples</h1></div>
+                <div class="page-header"><h1 id="tests" class="text-primary">Tests/Examples</h1></div>
             </div>
 
             <div class="col-xs-12 col-sm-8 col-sm-push-2">
@@ -147,7 +151,7 @@
             </div>
 
             <div class="col-xs-12 col-sm-8">
-        <div class="page-header"><h1 class="text-primary">Photos</h1></div>
+        <div class="page-header"><h1 id="photos" class="text-primary">Photos</h1></div>
             </div>
 
             <div class="col-xs-12 col-sm-8 col-sm-push-2">
@@ -166,7 +170,7 @@
             </div>
 
             <div class="col-xs-12 col-sm-8">
-                <div class="page-header"><h1 class="text-primary">Old Stuff</h1></div>
+                <div class="page-header"><h1 id="other" class="text-primary">Other</h1></div>
             </div>
 
             <div class="col-xs-12 col-sm-8 col-sm-push-2">
@@ -183,6 +187,18 @@
                     </div>
                 </div>
             </div>
+        </div>
+    </div>
+            
+          <nav class="hidden-xs col-sm-2" id="myScrollspy">
+            <ul class="nav nav-pills nav-stacked" data-spy="affix" data-offset-top="100">
+                <li><a href="#links">Links</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#tests">Tests/Examples</a></li>
+                <li><a href="#photos">Photos</a></li>
+                <li><a href="#other">Other</a></li>
+            </ul>
+        </nav>
         </div>
     </div>
 
