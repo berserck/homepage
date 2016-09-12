@@ -2,7 +2,9 @@
 <html lang="en">
 <head>
 <style>
-
+.affix {
+    top:30px;
+}
 </style>
 
     <meta charset="utf-8">
@@ -23,7 +25,7 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
 </head>
-<body data-spy="scroll" data-target="#myScrollspy" data-offset="200">
+<body data-spy="scroll" data-target="#myScrollspy">
 
     <header class="jumbotron">
         <div class="container">
@@ -59,7 +61,7 @@
                 <div class="page-header"><h1 id="projects" class="text-primary">My Projects</h1></div>
             </div>
             <div class="col-xs-12 col-sm-8 col-sm-push-1">
-                <div class="page-header"><h2>MacOS X</h2></div>
+                <div class="page-header"><h2 id="projects-macos">MacOS X: Image manipulation</h2></div>
             </div>
             <div class="col-xs-12 col-sm-8 col-sm-push-2">
                 <div class="panel panel-default">
@@ -99,6 +101,9 @@
                     </div>
                 </div>
             </div>
+            <div class="col-xs-12 col-sm-8 col-sm-push-1">
+                <div class="page-header"><h2 id="projects-tkalc">Tcl: Tkalc</h2></div>
+            </div>
             <div class="col-xs-12 col-sm-8 col-sm-push-2">
                 <div class="panel panel-default">
                     <div class="panel-heading"><h3 class="panel-title">tkalc:</h3></div>
@@ -112,7 +117,7 @@
             </div>
 
             <div class="col-xs-12 col-sm-8 col-sm-push-1">
-                <div class="page-header"><h2>Stardict</h2></div>
+                <div class="page-header"><h2 id="projects-stardict">Stardict</h2></div>
             </div>
 
             <div class="col-xs-12 col-sm-8 col-sm-push-2">
@@ -125,7 +130,7 @@
             </div>
 
             <div class="col-xs-12 col-sm-8 col-sm-push-1">
-                <div class="page-header"><h2>iPod</h2></div>
+                <div class="page-header"><h2 id="projects-ipod">iPod</h2></div>
             </div>
 
             <div class="col-xs-12 col-sm-8 col-sm-push-2">
@@ -191,9 +196,16 @@
     </div>
             
           <nav class="hidden-xs col-sm-2" id="myScrollspy">
-            <ul class="nav nav-pills nav-stacked" data-spy="affix" data-offset-top="100">
+            <ul id="myNav" class="nav nav-pills nav-stacked" data-spy="affix">
                 <li><a href="#links">Links</a></li>
-                <li><a href="#projects">Projects</a></li>
+                <li><a href="#projects">Projects</a>
+                    <ul>
+                        <li><a href="#projects-macos">MacOS X: image manipulation</a></li>
+                        <li><a href="#projects-stardict">Stardict</a></li>
+                        <li><a href="#projects-ipod">iPod</a></li>
+                        <li><a href="#projects-tkalc">tkalc</a></li>
+                    </ul>
+                </li>
                 <li><a href="#tests">Tests/Examples</a></li>
                 <li><a href="#photos">Photos</a></li>
                 <li><a href="#other">Other</a></li>
@@ -210,5 +222,17 @@
       </div>
     </footer>
 
+
 </body>
+    
+    <script type="text/javascript">
+$(document).ready(function(){
+    $("#myNav").affix({
+        offset: {
+            top: 195
+        }
+    });
+});
+</script>
+    
 </html>
