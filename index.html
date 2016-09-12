@@ -16,16 +16,17 @@
 .bs-docs-sidebar .nav>li>a {
     /*add transparent border */
     border-left: 2px solid transparent;
+    color: #999;
 }
 
     /* active & hover links */
 .bs-docs-sidebar .nav>.active>a,
 .bs-docs-sidebar .nav>li>a:hover,
 .bs-docs-sidebar .nav>li>a:focus {
-    color: #563d7c;
+    color: @brand-primary;
     text-decoration: none;
     background-color: transparent;
-    border-left: 2px solid #563d7c;
+    border-left: 2px solid #337ab7;
 }
     
 /* nested links */
@@ -37,7 +38,7 @@
 }
 
 .bs-docs-sidebar .nav>.active>a {
-    color: #563d7c;
+    color: #337ab7;
     font-size: 14x;
 }
     
@@ -89,6 +90,8 @@
                               <li><a href="https://recipes.parracho.tk/">Recipes website</a></li>
                               <li>My github resume <a href="http://resume.github.io/?berserck">http://resume.github.io/?berserck</a></li>
                               <li><a href="ithaka/index.htm">Weather balloon: Ithaka project</a></li>
+                              <li><a href="https://lhc-cern.blogspot.com/">Blog</a></li>
+                              
                         </ul>
                     </div>
                 </div>
@@ -180,22 +183,21 @@
                 </div>
             </div>
 
+
             <div class="col-xs-12 col-sm-8">
-                <div class="page-header"><h1 id="tests" class="text-primary">Tests/Examples</h1></div>
+                <div class="page-header"><h1 id="photos" class="text-primary">Photos</h1></div>
             </div>
 
             <div class="col-xs-12 col-sm-8 col-sm-push-2">
-                <ul>
-                    <li>A nice example of a <a href="stopwatch/stopwatch.html">Stopwatch</a> written in javascript</li>
-                    <li>A <a href="test.html">test page</a></li>
-                </ul>
-            </div>
-
-            <div class="col-xs-12 col-sm-8">
-        <div class="page-header"><h1 id="photos" class="text-primary">Photos</h1></div>
-            </div>
-
-            <div class="col-xs-12 col-sm-8 col-sm-push-2">
+                <div class="panel panel-default">
+                    <div class="panel-heading"><h3 class="panel-title">Family photos</h3></div>
+                    <div class="panel-body">
+                        <div class="list-group">
+                            <a class="list-group-item text-center" href="https://wedding.zajacova-parracho.tk/">Wedding</a>
+                            <a class="list-group-item text-center" href="https://girls.parracho.tk/">Lenka and Leonor</a>
+                        </div>
+                    </div>
+                </div>
                 <div class="panel panel-default">
                     <div class="panel-heading"><h3 class="panel-title">Viagens <small>Links para as fotos</small></h3></div>
                     <div class="panel-body">
@@ -214,6 +216,13 @@
                 <div class="page-header"><h1 id="other" class="text-primary">Other</h1></div>
             </div>
 
+            <div class="col-xs-12 col-sm-8 col-sm-push-2">
+                <ul>
+                    <li>A nice example of a <a href="stopwatch/stopwatch.html">Stopwatch</a> written in javascript</li>
+                    <li>A <a href="test.html">test page</a></li>
+                </ul>
+            </div>
+                    
             <div class="col-xs-12 col-sm-8 col-sm-push-2">
                 <div class="panel panel-default">
                     <div class="panel-heading"><h3 class="panel-title">CMS links</h3></div>
@@ -242,7 +251,6 @@
                         <li><a href="#projects-ipod">iPod</a></li>
                     </ul>
                 </li>
-                <li><a href="#tests">Tests/Examples</a></li>
                 <li><a href="#photos">Photos</a></li>
                 <li><a href="#other">Other</a></li>
             </ul>
