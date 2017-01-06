@@ -1,48 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<style>
-.affix {
-    top:30px;
-}
+    <style>
+        .affix {
+            top:30px;
+        }
 
-/* sidebar */
-.bs-docs-sidebar {
-    padding-left: 20px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-/* all links */
-.bs-docs-sidebar .nav>li>a {
-    /*add transparent border */
-    border-left: 2px solid transparent;
-    color: #999;
-}
+        /* sidebar */
+        .bs-docs-sidebar {
+            padding-left: 20px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        /* all links */
+        .bs-docs-sidebar .nav>li>a {
+            /*add transparent border */
+            border-left: 2px solid transparent;
+            color: #999;
+        }
 
-    /* active & hover links */
-.bs-docs-sidebar .nav>.active>a,
-.bs-docs-sidebar .nav>li>a:hover,
-.bs-docs-sidebar .nav>li>a:focus {
-    color: @brand-primary;
-    text-decoration: none;
-    background-color: transparent;
-    border-left: 2px solid #337ab7;
-}
+        /* active & hover links */
+        .bs-docs-sidebar .nav>.active>a,
+        .bs-docs-sidebar .nav>li>a:hover,
+        .bs-docs-sidebar .nav>li>a:focus {
+            color: @brand-primary;
+            text-decoration: none;
+            background-color: transparent;
+            border-left: 2px solid #337ab7;
+        }
 
-/* nested links */
-.bs-docs-sidebar .nav .nav>li>a {
-    padding-top: 1px;
-    padding-bottom: 1px;
-    padding-left: 30px;
-    font-size: 12px;
-}
+        /* nested links */
+        .bs-docs-sidebar .nav .nav>li>a {
+            padding-top: 1px;
+            padding-bottom: 1px;
+            padding-left: 30px;
+            font-size: 12px;
+        }
 
-.bs-docs-sidebar .nav>.active>a {
-    color: #337ab7;
-    font-size: 14x;
-}
+        .bs-docs-sidebar .nav>.active>a {
+            color: #337ab7;
+            font-size: 14x;
+        }
 
-</style>
+    </style>
 
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -50,201 +50,204 @@
 
     <title>Pedro Parracho's Personal page</title>
 
-<!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
-<!-- Optional theme -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 
-<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-<!-- Latest compiled and minified JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
-<!-- font awsome -->
-<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
+    <!-- font awsome -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
 
 </head>
 <body data-spy="scroll" data-target="#myScrollspy">
 
-    <header class="jumbotron">
-        <div class="container">
-            <div class="row row-header">
-                <div class="col-xs-12 col-sm-8">
-                    <h1>Web page of Pedro Parracho</h1>
-                    <p>Welcome!</p>
-                </div>
-            </div>
-        </div>
-    </header>
-
+<header class="jumbotron">
     <div class="container">
-        <div class="row">
-            <div class="col-xs-12 col-sm-10">
-                <div class="row">
-                    <div class="col-xs-12">
-            <div id="links" class="page-header"><h1 class="text-primary">Links</h1></div>
-            </div>
-            <div class="col-xs-12 col-sm-8 col-sm-push-2">
-                <div class="panel panel-default">
-                    <div class="panel-heading"><h3 class="panel-title">Important Links</h3></div>
-                    <div class="panel-body">
-                          <ul>
-                              <li><a href="https://recipes.parracho.tk/">Recipes website</a></li>
-                              <li>My github resume <a href="http://resume.github.io/?berserck">http://resume.github.io/?berserck</a></li>
-                              <li><a href="https://ithaka.parracho.tk">Weather balloon: Ithaka project</a></li>
-                              <li><a href="https://lhc-cern.blogspot.com/">Blog</a></li>
-
-                        </ul>
-                    </div>
-                </div>
-            </div>
+        <div class="row row-header">
             <div class="col-xs-12 col-sm-8">
-                <div class="page-header"><h1 id="projects" class="text-primary">My Projects</h1></div>
-            </div>
-            <div class="col-xs-12 col-sm-8 col-sm-push-1">
-                <div class="page-header"><h2 id="projects-macos">MacOS X: Image manipulation</h2></div>
-            </div>
-            <div class="col-xs-12 col-sm-8 col-sm-push-2">
-                <div class="panel panel-default">
-                    <div class="panel-heading"><h3 class="panel-title"><a href="https://github.com/berserck/BatchRename" ><i class="fa fa-github"></i></a> Rename photos in MacOs X </h3></div>
-                    <div class="panel-body">
-                        <p>Rename files scripts for mac OS X, it will take a bunch of files and will change their name according with the scheme: <samp>aaaa.mm.dd.filename.sequence.jpeg</samp></p>
-                        <p>The date field is created using the file creation time, the filename is a text string requested by the script via dialog window, sequence a is a sequential number generated.</p>
-                        <p>The files are here:</p>
-                        <ul>
-                            <li><a href="files/mac/Rename.workflow.zip">workflow</a>, with a dialog box will appear asking for the files to be renamed;</li>
-                            <li><a href="files/mac/Rename.app.zip">application</a>, files can be dragged and dropped over the application;</li>
-                            <li><a href="files/mac/BatchRename.workflow.zip">Service</a> (file to be placed in <code>$HOME/Library/Services/</code>) this will pick current selected files for rename.</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="col-xs-12 col-sm-8 col-sm-push-2">
-                <div class="panel panel-default">
-                    <div class="panel-heading"><h3 class="panel-title"><a href="https://github.com/berserck/ImageRotate" ><i class="fa fa-github"></i></a> Rotate photos in mac OS X </h3></div>
-                    <div class="panel-body">
-                        <p>It will rotate the image left or right (it is a service, you need to extract file to <code>$HOME/Library/Services/</code>)</p>
-                        <ul>
-                            <li><a href="http://dl.dropbox.com/u/6205438/mySoft/macOSx/ImageServices/RotateRight.tgz">Rotate Right</a></li>
-                            <li><a href="http://dl.dropbox.com/u/6205438/mySoft/macOSx/ImageServices/RotateLeft.tgz">Rotate Left</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="col-xs-12 col-sm-8 col-sm-push-2">
-                <div class="panel panel-default">
-                    <div class="panel-heading"><h3 class="panel-title"><a href="https://github.com/berserck/ResizeImage" ><i class="fa fa-github"></i></a> Resize photos in mac OS X </h3></div>
-                    <div class="panel-body">
-                        <p>(It is a service, extract file to <code>$HOME/Library/Services/</code>)</p>
-                        <ul>
-                            <li><a href="http://dl.dropbox.com/u/6205438/mySoft/macOSx/ImageServices/ResizeImages.tgz">Resize images</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="col-xs-12 col-sm-8 col-sm-push-1">
-                <div class="page-header"><h2 id="projects-tkalc">Tcl: Tkalc</h2></div>
-            </div>
-            <div class="col-xs-12 col-sm-8 col-sm-push-2">
-                <div class="panel panel-default">
-                    <div class="panel-heading"><h3 class="panel-title"><a href="https://github.com/berserck/tkalcMacOS" ><i class="fa fa-github"></i></a> tkalc </h3></div>
-                    <div class="panel-body">
-                        <p> I took the application <a href="http://www.folgmann.de/en/software/tkalc/">tkalc</a> written in Tcl and I repackaged it to be shown as a real application in MacOs, instead of being shown as a Tcl script.</p>
-                        <ul>
-                            <li><a href="files/mac/tkalc.app.zip">tkalc in an app format</a> (version works for Leopard to Maverics)</li>
-                            <li><a href="files/mac/tkalc.app_sierra.zip">tkalc in an app format</a> (version works for Sierra)</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-xs-12 col-sm-8 col-sm-push-1">
-                <div class="page-header"><h2 id="projects-stardict">Stardict</h2></div>
-            </div>
-
-            <div class="col-xs-12 col-sm-8 col-sm-push-2">
-                <div class="panel panel-default">
-                    <div class="panel-heading"><h3 class="panel-title"> CIA world factbook</h3></div>
-                    <div class="panel-body">
-                        <p> I converted the CIA world factbook 2009 into a stardict format, <a href="files/starDict_CIA09.zip">here</a> is the file.</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-xs-12 col-sm-8 col-sm-push-1">
-                <div class="page-header"><h2 id="projects-ipod">iPod</h2></div>
-            </div>
-
-            <div class="col-xs-12 col-sm-8 col-sm-push-2">
-                <div class="panel panel-default">
-                    <div class="panel-heading"><h3 class="panel-title"><a href="https://github.com/berserck/iPodCalendar" ><i class="fa fa-github"></i></a> iPod Calendar script </h3></div>
-                    <div class="panel-body">
-                        <p> Here is a script that can be copied into the iPod and then it will synchronize your google calendars with the iPod calendar. </p>
-                        <p>The script needs to be called manually for terminal, as there is not mechanism avalialbel in the iPod to auto-execute the script.</p>
-                        <a href="files/iPodCalendar.zip">Synchronize iPod with google calendar</a>.
-                    </div>
-                </div>
-            </div>
-
-
-            <div class="col-xs-12 col-sm-8">
-                <div class="page-header"><h1 id="photos" class="text-primary">Photos</h1></div>
-            </div>
-
-            <div class="col-xs-12 col-sm-8 col-sm-push-2">
-                <div class="panel panel-default">
-                    <div class="panel-heading"><h3 class="panel-title">Family photos</h3></div>
-                    <div class="panel-body">
-                        <div class="list-group">
-                            <a class="list-group-item text-center" href="https://wedding.zajacova-parracho.tk/">Wedding</a>
-                            <a class="list-group-item text-center" href="https://girls.parracho.tk/">Lenka and Leonor</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="panel panel-default">
-                    <div class="panel-heading"><h3 class="panel-title">Viagens <small>Links para as fotos</small></h3></div>
-                    <div class="panel-body">
-                        <div class="list-group">
-                            <a class="list-group-item text-center" href="trips/fotos/at/innsbruck/index.html">Innsbruck</a>
-                            <a class="list-group-item text-center" href="trips/fotos/pt/acores/index.html">Terceira</a>
-                            <a class="list-group-item text-center" href="trips/fotos/si/album/index.html">Eslovenia</a>
-                            <a class="list-group-item text-center" href="trips/fotos/de/Heidelberg/index.html">Heidelberg</a>
-                            <a class="list-group-item text-center" href="trips/fotos/Austin/index.html">Austin</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-xs-12 col-sm-8">
-                <div class="page-header"><h1 id="other" class="text-primary">Other</h1></div>
-            </div>
-
-            <div class="col-xs-12 col-sm-8 col-sm-push-2">
-                <ul>
-                    <li>A nice example of a <a href="stopwatch/stopwatch.html">Stopwatch</a> written in javascript</li>
-                    <li>A <a href="test.html">test page</a></li>
-                </ul>
-            </div>
-
-            <div class="col-xs-12 col-sm-8 col-sm-push-2">
-                <div class="panel panel-default">
-                    <div class="panel-heading"><h3 class="panel-title">CMS links</h3></div>
-                    <div class="panel-body">
-                          <ul>
-                              <li><a href="CMS_bookmarks.html">Page with links my bookmarks for CMS</a></li>
-                              <li>ECAL Doxygen <a href="http://cms-ecaldaq-doxygen.web.cern.ch/cms-ecaldaq-doxygen/">http://cms-ecaldaq-doxygen.web.cern.ch/cms-ecaldaq-doxygen/</a></li>
-                              <li><a href="https://twiki.cern.ch/twiki/bin/view/Main/PedroParracho?forceShow=1">My TWIKI page</a></li>
-                              <li><a href="files/cfg.xml">Jedit mode file for CMS config files</a></li>
-                              <li><a href="colorV2/color.html">Color DB GUI diff</a></li>
-                        </ul>
-                    </div>
-                </div>
+                <h1>Web page of Pedro Parracho</h1>
+                <p>Welcome!</p>
             </div>
         </div>
     </div>
+</header>
 
-          <nav class="hidden-xs col-sm-2 bs-docs-sidebar" id="myScrollspy">
+<div class="container">
+    <div class="row">
+        <div class="col-xs-12 col-sm-10">
+            <div class="row">
+                <div class="col-xs-12">
+                    <div id="links" class="page-header"><h1 class="text-primary">Links</h1></div>
+                </div>
+                <div class="col-xs-12 col-sm-8 col-sm-push-2">
+                    <div class="panel panel-default">
+                        <div class="panel-heading"><h3 class="panel-title">Important Links</h3></div>
+                        <div class="panel-body">
+                            <ul>
+                                <li><a href="https://recipes.parracho.tk/">Recipes website</a></li>
+                                <li>My github resume <a href="http://resume.github.io/?berserck">http://resume.github.io/?berserck</a></li>
+                                <li><a href="https://ithaka.parracho.tk">Weather balloon: Ithaka project</a></li>
+                                <li><a href="https://lhc-cern.blogspot.com/">Blog</a></li>
+                                <li><a href="JavaScript30">javascript examples</a> </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-8">
+                    <div class="page-header"><h1 id="projects" class="text-primary">My Projects</h1></div>
+                </div>
+                <div class="col-xs-12 col-sm-8 col-sm-push-1">
+                    <div class="page-header"><h2 id="projects-macos">MacOS X: Image manipulation</h2></div>
+                </div>
+                <div class="col-xs-12 col-sm-8 col-sm-push-2">
+                    <div class="panel panel-default">
+                        <div class="panel-heading"><h3 class="panel-title"><a href="https://github.com/berserck/BatchRename" ><i class="fa fa-github"></i></a> Rename photos in MacOs X </h3></div>
+                        <div class="panel-body">
+                            <p>Rename files scripts for mac OS X, it will take a bunch of files and will change their name according with the scheme: <samp>aaaa.mm.dd.filename.sequence.jpeg</samp></p>
+                            <p>The date field is created using the file creation time, the filename is a text string requested by the script via dialog window, sequence a is a sequential number generated.</p>
+                            <p>The files are here:</p>
+                            <ul>
+                                <li><a href="files/mac/Rename.workflow.zip">workflow</a>, with a dialog box will appear asking for the files to be renamed;</li>
+                                <li><a href="files/mac/Rename.app.zip">application</a>, files can be dragged and dropped over the application;</li>
+                                <li><a href="files/mac/BatchRename.workflow.zip">Service</a> (file to be placed in <code>$HOME/Library/Services/</code>) this will pick current selected files for rename.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-8 col-sm-push-2">
+                    <div class="panel panel-default">
+                        <div class="panel-heading"><h3 class="panel-title"><a href="https://github.com/berserck/ImageRotate" ><i class="fa fa-github"></i></a> Rotate photos in mac OS X </h3></div>
+                        <div class="panel-body">
+                            <p>It will rotate the image left or right (it is a service, you need to extract file to <code>$HOME/Library/Services/</code>)</p>
+                            <ul>
+                                <li><a href="http://dl.dropbox.com/u/6205438/mySoft/macOSx/ImageServices/RotateRight.tgz">Rotate Right</a></li>
+                                <li><a href="http://dl.dropbox.com/u/6205438/mySoft/macOSx/ImageServices/RotateLeft.tgz">Rotate Left</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-8 col-sm-push-2">
+                    <div class="panel panel-default">
+                        <div class="panel-heading"><h3 class="panel-title"><a href="https://github.com/berserck/ResizeImage" ><i class="fa fa-github"></i></a> Resize photos in mac OS X </h3></div>
+                        <div class="panel-body">
+                            <p>(It is a service, extract file to <code>$HOME/Library/Services/</code>)</p>
+                            <ul>
+                                <li><a href="http://dl.dropbox.com/u/6205438/mySoft/macOSx/ImageServices/ResizeImages.tgz">Resize images</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-8 col-sm-push-1">
+                    <div class="page-header"><h2 id="projects-tkalc">Tcl: Tkalc</h2></div>
+                </div>
+                <div class="col-xs-12 col-sm-8 col-sm-push-2">
+                    <div class="panel panel-default">
+                        <div class="panel-heading"><h3 class="panel-title"><a href="https://github.com/berserck/tkalcMacOS" ><i class="fa fa-github"></i></a> tkalc </h3></div>
+                        <div class="panel-body">
+                            <p> I took the application <a href="http://www.folgmann.de/en/software/tkalc/">tkalc</a> written in Tcl and I repackaged it to be shown as a real application in MacOs, instead of being shown as a Tcl script.</p>
+                            <ul>
+                                <li><a href="files/mac/tkalc.app.zip">tkalc in an app format</a> (version works for Leopard to Maverics)</li>
+                                <li><a href="files/mac/tkalc.app_sierra.zip">tkalc in an app format</a> (version works for Sierra)</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xs-12 col-sm-8 col-sm-push-1">
+                    <div class="page-header"><h2 id="projects-stardict">Stardict</h2></div>
+                </div>
+
+                <div class="col-xs-12 col-sm-8 col-sm-push-2">
+                    <div class="panel panel-default">
+                        <div class="panel-heading"><h3 class="panel-title"> CIA world factbook</h3></div>
+                        <div class="panel-body">
+                            <p> I converted the CIA world factbook 2009 into a stardict format, <a href="files/starDict_CIA09.zip">here</a> is the file.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xs-12 col-sm-8 col-sm-push-1">
+                    <div class="page-header"><h2 id="projects-ipod">iPod</h2></div>
+                </div>
+
+                <div class="col-xs-12 col-sm-8 col-sm-push-2">
+                    <div class="panel panel-default">
+                        <div class="panel-heading"><h3 class="panel-title"><a href="https://github.com/berserck/iPodCalendar" ><i class="fa fa-github"></i></a> iPod Calendar script </h3></div>
+                        <div class="panel-body">
+                            <p> Here is a script that can be copied into the iPod and then it will synchronize your google calendars with the iPod calendar. </p>
+                            <p>The script needs to be called manually for terminal, as there is not mechanism avalialbel in the iPod to auto-execute the script.</p>
+                            <a href="files/iPodCalendar.zip">Synchronize iPod with google calendar</a>.
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+                <div class="col-xs-12 col-sm-8">
+                    <div class="page-header"><h1 id="photos" class="text-primary">Photos</h1></div>
+                </div>
+
+                <div class="col-xs-12 col-sm-8 col-sm-push-2">
+                    <div class="panel panel-default">
+                        <div class="panel-heading"><h3 class="panel-title">Family photos</h3></div>
+                        <div class="panel-body">
+                            <div class="list-group">
+                                <a class="list-group-item text-center" href="https://wedding.zajacova-parracho.tk/">Wedding</a>
+                                <a class="list-group-item text-center" href="https://girls.parracho.tk/">Lenka and Leonor</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading"><h3 class="panel-title">Viagens <small>Links para as fotos</small></h3></div>
+                        <div class="panel-body">
+                            <div class="list-group">
+                                <a class="list-group-item text-center" href="trips/fotos/at/innsbruck/index.html">Innsbruck</a>
+                                <a class="list-group-item text-center" href="trips/fotos/pt/acores/index.html">Terceira</a>
+                                <a class="list-group-item text-center" href="trips/fotos/si/album/index.html">Eslovenia</a>
+                                <a class="list-group-item text-center" href="trips/fotos/de/Heidelberg/index.html">Heidelberg</a>
+                                <a class="list-group-item text-center" href="trips/fotos/Austin/index.html">Austin</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xs-12 col-sm-8">
+                    <div class="page-header"><h1 id="other" class="text-primary">Other</h1></div>
+                </div>
+
+                <div class="col-xs-12 col-sm-8 col-sm-push-2">
+                    <ul>
+                        <li>A nice example of a <a href="stopwatch/stopwatch.html">Stopwatch</a> written in javascript</li>
+                        <li>A <a href="test.html">test page</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-xs-12 col-sm-8 col-sm-push-2">
+                    <div class="panel panel-default">
+                        <div class="panel-heading"><h3 class="panel-title">CMS links</h3></div>
+                        <div class="panel-body">
+                            <ul>
+                                <li><a href="CMS_bookmarks.html">Page with links my bookmarks for CMS</a></li>
+                                <li>ECAL Doxygen <a href="http://cms-ecaldaq-doxygen.web.cern.ch/cms-ecaldaq-doxygen/">http://cms-ecaldaq-doxygen.web.cern.ch/cms-ecaldaq-doxygen/</a></li>
+                                <li><a href="https://twiki.cern.ch/twiki/bin/view/Main/PedroParracho?forceShow=1">My TWIKI page</a></li>
+                                <li><a href="files/cfg.xml">Jedit mode file for CMS config files</a></li>
+                                <li><a href="colorV2/color.html">Color DB GUI diff</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <nav class="hidden-xs col-sm-2 bs-docs-sidebar" id="myScrollspy">
             <ul id="sidebar" class="nav nav-stacked fixed" data-spy="affix">
                 <li><a href="#links">Links</a></li>
                 <li><a href="#projects">Projects</a>
@@ -259,34 +262,34 @@
                 <li><a href="#other">Other</a></li>
             </ul>
         </nav>
+    </div>
+</div>
+
+<footer class="row-footer">
+    <div class="container">
+        <div class="col-xs-12">
+            <p align=center>Last changed 2016.09.12 © Copyright 2016 Pedro Parracho</p>
         </div>
     </div>
-
-    <footer class="row-footer">
-      <div class="container">
-          <div class="col-xs-12">
-              <p align=center>Last changed 2016.09.12 © Copyright 2016 Pedro Parracho</p>
-          </div>
-      </div>
-    </footer>
+</footer>
 
 
 </body>
 
 <script type="text/javascript">
-$(document).ready(function(){
-    $("#sidebar").affix({
-        offset: {
-            top: 195
-        }
+    $(document).ready(function(){
+        $("#sidebar").affix({
+            offset: {
+                top: 195
+            }
+        });
+
     });
 
-});
-
-$('body').scrollspy({
-    target: '.bs-docs-sidebar',
-    offset: 40
-});
+    $('body').scrollspy({
+        target: '.bs-docs-sidebar',
+        offset: 40
+    });
 
 </script>
 
