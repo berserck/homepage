@@ -9,6 +9,7 @@
 
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!--<link rel="stylesheet" href="https://bootswatch.com/paper/bootstrap.min.css" >-->
 
     <!-- Optional theme -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
@@ -17,6 +18,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <!--linkedin-->
+    <script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
 
     <!-- font awsome -->
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
@@ -45,18 +48,8 @@
             background:transparent;
         }
 
-
-        /* sidebar */
-        .bs-docs-sidebar {
-            padding-left: 20px;
-            margin-top: 20px;
-            margin-bottom: 20px;
-        }
-        /* all links */
-        .bs-docs-sidebar .nav>li>a {
-            /*add transparent border */
-            border-left: 2px solid transparent;
-            color: #999;
+        body {
+            position: relative;
         }
 
         /* active & hover links */
@@ -81,10 +74,14 @@
             font-size: 100%;
         }
 
+        footer {
+            text-align:center;
+            font-size: x-small;
+        }
     </style>
 
 </head>
-<body data-spy="scroll" data-target="#myScrollspy">
+<body data-spy="scroll" data-target="#myScrollspy" data-offset="50">
 
 <div class="bg"></div>
 <header class="jumbotron">
@@ -100,17 +97,41 @@
 
 <div class="container">
     <div class="row">
+
         <div class="col-xs-12 col-sm-10">
             <div class="row">
+                <div class="col-xs-12">
+                    <div id="aboutme" class="page-header"><h1 class="text-primary">About me</h1> </div>
+                </div>
+                <div class="col-xs-12 col-sm-8 col-sm-push-2">
+                    <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc pretium felis at erat egestas, eu scelerisque ante lobortis. Sed sit amet nunc tellus. Phasellus tellus velit, tempor eu augue vel, pharetra condimentum ipsum. Donec dignissim erat eu velit ultrices, vel tempus magna lobortis. Cras suscipit maximus lacus, et suscipit lectus semper nec. Sed pharetra lorem ligula. Ut vel sapien sem. Suspendisse semper ornare mauris id volutpat.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc pretium felis at erat egestas, eu scelerisque ante lobortis. Sed sit amet nunc tellus. Phasellus tellus velit, tempor eu augue vel, pharetra condimentum ipsum. Donec dignissim erat eu velit ultrices, vel tempus magna lobortis. Cras suscipit maximus lacus, et suscipit lectus semper nec. Sed pharetra lorem ligula. Ut vel sapien sem. Suspendisse semper ornare mauris id volutpat. Nulla facilisi. Cras condimentum, mi at bibendum tristique, mauris mauris consectetur justo, mattis porttitor justo metus eu lorem. Sed facilisis mattis auctor. Proin laoreet tristique ex, eget hendrerit magna rutrum sed. Nam maximus molestie sapien, ut convallis nulla dictum a. Quisque sed libero in nulla pharetra molestie. Integer a sapien urna.
+                    </p>
+                    <p>Fusce mattis nisi eget diam faucibus, sit amet egestas felis finibus. Proin sollicitudin turpis nec tincidunt ullamcorper. Pellentesque ullamcorper luctus consequat. Suspendisse diam odio, cursus sagittis auctor sed, hendrerit ullamcorper augue. Donec suscipit justo quis tortor congue, et dapibus dolor ornare. Pellentesque porta, mi vitae sodales porta, neque magna faucibus quam, eu ultrices augue mauris vel ex. Sed venenatis lacus et risus vehicula mollis.
+                    </p>
+                </div>
+
+
+
                 <div class="col-xs-12">
                     <div id="links" class="page-header"><h1 class="text-primary">Links</h1></div>
                 </div>
                 <div class="col-xs-12 col-sm-8 col-sm-push-2">
+
+
+                    <div class="LI-profile-badge"  data-version="v1" data-size="medium" data-locale="en_US" data-type="horizontal" data-theme="light" data-vanity="pedro-parracho"><a class="LI-simple-link" href='https://ch.linkedin.com/in/pedro-parracho?trk=profile-badge'>Pedro Parracho</a></div>
+
+                    <div class="LI-profile-badge"  data-version="v1" data-size="medium" data-locale="en_US" data-type="vertical" data-theme="light" data-vanity="pedro-parracho"><a class="LI-simple-link" href='https://ch.linkedin.com/in/pedro-parracho?trk=profile-badge'>Pedro Parracho</a></div>
+
+
+                    <iframe src="http://githubbadge.appspot.com/berserck" style="border: 0;height: 142px;width: 200px;overflow: hidden;"></iframe>
+
                     <div class="panel panel-default">
                         <div class="panel-heading"><h3 class="panel-title">Important Links</h3></div>
                         <div class="panel-body">
                             <ul>
                                 <li><i class="fa fa-linkedin" style="color:#0076b7" aria-hidden="true"></i> <a href="https://ch.linkedin.com/in/pedro-parracho-154a89"> Linkedin profile</a> </li>
+                                <li><i class="fa fa-github"  aria-hidden="true"></i><a href="https://github.com/berserck"> My github page </a></li>
                                 <li><i class="fa fa-github"  aria-hidden="true"></i><a href="http://resume.github.io/?berserck"> My github resume </a></li>
                                 <li><a href="https://ithaka.parracho.tk">Weather balloon: Ithaka project</a></li>
                                 <li><a href="https://lhc-cern.blogspot.com/">Blog</a></li>
@@ -121,20 +142,47 @@
                     </div>
                 </div>
                 <div class="col-xs-12 col-sm-8">
+                    <div class="page-header"><h1 id="work" class="text-primary">Work projects</h1></div>
+                </div>
+                <div class="col-xs-12 col-sm-8 col-sm-push-1">
+                    <div class="page-header"><h2 id="work-ctrm">Sigma Commodity Trade Risk Management</h2></div>
+                </div>
+                <div class="col-xs-12 col-sm-8 col-sm-push-2">
+                    <div class="panel panel-default">
+                        <div class="panel-heading"><h3 class="panel-title">
+                            <a href="http://demo.deram.com/GenericSigmaTreasury_V2.9/Account/login.aspx"> Sigma CTRM</a></h3>
+                        </div>
+                        <div class="panel-body">
+                            <a href="http://demo.deram.com/GenericSigmaTreasury_V2.9/Account/login.aspx">Demo website</a>
+                            <p></p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-xs-12 col-sm-8">
                     <div class="page-header"><h1 id="projects" class="text-primary">My Projects</h1></div>
                 </div>
 
                 <div class="col-xs-12 col-sm-8 col-sm-push-1">
-                    <div class="page-header"><h2 id="projects-symfony">Currency Statistics: Test Symfony</h2></div>
+                    <div class="page-header"><h2 id="projects-symfony">curstat: Currency Statistics</h2></div>
                 </div>
                 <div class="col-xs-12 col-sm-8 col-sm-push-2">
                     <div class="panel panel-default">
                         <div class="panel-heading"><h3 class="panel-title"><a href="https://github.com/berserck/curstat" >
-                            <i class="fa fa-github"> </i> Curstat</a></h3></div>
+                            <i class="fa fa-github"> </i> github</a> & <a href="https://curstat.parracho.tk/">demo</a></h3></div>
                         <div class="panel-body">
-                            <a href="https://curstat.parracho.tk/">https://curstat.parracho.tk/</a>
-                            <p>This is a small application that will query the api <a href="http://fixer.io/">api.fixer.io</a> for
+                            <p class="lead">This is a small application that will query the api <a href="http://fixer.io/">api.fixer.io</a> for
                                 the Forex rates and do some data manipulation with it.</p>
+
+                            <p>I wanted the checkout the <a href="https://symfony.com/">symfony</a> framework, to see how the basic setup was done and how long to get a basic website up.
+                            In a couple of days I managed to deploy this small toy application that will collect the exchange rate of several currencies for the last 5 working days and it will calculate in this time what was the maximum, the minimum and the average value of the exchange rate.</p>
+                            <p>Nothing too complicated, I just wanted to check a few features </p>
+                            <ul>
+                                <li>Query REST api: I'm getting the data from <a href="http://fixer.io/">api.fixer.io</a>, the link <a href="https://curstat.parracho.tk/showData">Show data</a> will print the raw json and obtained from fixer.io.</li>
+                                <li>Make a responsive design page: the home page will present the results in a table form that will adapt to your screen size</li>
+                                <li>Make a REST API endpoint: I also implemented an REST api where you can all get the results in <code>api/stats</code>, or you can query the currency you want using <code>api/stats/[currency]</code>. The only HTML methods implemented are GET. </li>
+                            </ul>
                             <p> The source code can be found in <a href="https://github.com/berserck/curstat">github</a>.</p>
                         </div>
                     </div>
@@ -221,7 +269,7 @@
                         <div class="panel-heading"><h3 class="panel-title"><a href="https://github.com/berserck/iPodCalendar" ><i class="fa fa-github"></i> iPod Calendar script </a></h3></div>
                         <div class="panel-body">
                             <p> Here is a script that can be copied into the iPod and then it will synchronize your google calendars with the iPod calendar. </p>
-                            <p>The script needs to be called manually for terminal, as there is not mechanism avalialbel in the iPod to auto-execute the script.</p>
+                            <p>The script is a shell script that needs to be called manually for terminal, as there is not a mechanism available in the iPod to auto-execute the script.</p>
                             <a href="files/iPodCalendar.zip">Synchronize iPod with google calendar</a>.
                         </div>
                     </div>
@@ -257,7 +305,9 @@
 
         <nav class="hidden-xs col-sm-2 bs-docs-sidebar" id="myScrollspy">
             <ul id="sidebar" class="nav nav-stacked fixed" data-spy="affix">
-                <li><a href="#links">Links</a></li>
+                <li class="active"><a href="#aboutme">About me</a></li>
+                <li ><a href="#links">Links</a></li>
+                <li ><a href="#work">Work projects</a></li>
                 <li><a href="#projects">Projects</a>
                     <ul class="nav nav-stacked">
                         <li><a href="#projects-symfony">Currency Statistics: Test Symfony</a></li>
@@ -276,28 +326,12 @@
 <footer class="row-footer">
     <div class="container">
         <div class="col-xs-12">
-            <p align=center>Last changed 2017.01.24 by Pedro Parracho</p>
+            <p>Last changed 2017.01.24 by Pedro Parracho</p>
         </div>
     </div>
 </footer>
 
-
-</body>
-
 <script type="text/javascript">
-    $(document).ready(function(){
-        $("#sidebar").affix({
-            offset: {
-                top: 195
-            }
-        });
-
-    });
-
-    $('body').scrollspy({
-        target: '.bs-docs-sidebar',
-        offset: 40
-    });
 
     var jumboHeight = $('.jumbotron').outerHeight();
     function parallax(){
@@ -309,5 +343,8 @@
         parallax();
     });
 </script>
+</body>
+
+
 
 </html>
