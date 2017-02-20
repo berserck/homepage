@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico" />
+
     <title>Pedro Parracho's Personal page</title>
 
     <!-- Latest compiled and minified CSS -->
@@ -26,6 +28,13 @@
 
 
     <style>
+
+        :root {
+            --main-color: #5886c8;
+            --alternative-color: #f00;
+        }
+
+
         /* jumbotron*/
 
         .bg {
@@ -43,8 +52,8 @@
 
         .jumbotron {
             height: 310px;
-            color: white;
-            text-shadow: #444 0 1px 1px;
+            color: #98adb3;
+            text-shadow: white 1px 1px 3px;
             background:transparent;
         }
 
@@ -58,7 +67,7 @@
         .bs-docs-sidebar .nav>li>a:focus {
             text-decoration: none;
             background-color: transparent;
-            border-left: 2px solid #337ab7;
+            border-left: 2px solid var(--alternative-color);
         }
 
         /* nested links */
@@ -70,7 +79,7 @@
         }
 
         .bs-docs-sidebar .nav>.active>a {
-            color: #337ab7;
+            color: var(--main-color);
             font-size: 100%;
         }
 
@@ -89,7 +98,7 @@
         <div class="row row-header">
             <div class="col-xs-12 col-sm-8">
                 <h1>Web page of Pedro Parracho</h1>
-                <p>Welcome!</p>
+                <h2>Welcome!</h2>
             </div>
         </div>
     </div>
@@ -197,7 +206,7 @@
                         <div class="panel-heading"><h3 class="panel-title"><a href="https://github.com/berserck/BatchRename" >
                             <i class="fa fa-github"></i> Rename photos in MacOs X </a></h3></div>
                         <div class="panel-body">
-                            <p>Rename files scripts for mac OS X, it will take a bunch of files and will change their name according with the scheme: <samp>aaaa.mm.dd.filename.sequence.jpeg</samp></p>
+                            <p class="lead">Rename files scripts for mac OS X, it will take a bunch of files and will change their name according with the scheme: <samp>aaaa.mm.dd.filename.sequence.jpeg</samp></p>
                             <p>The date field is created using the file creation time, the filename is a text string requested by the script via dialog window, sequence a is a sequential number generated.</p>
                             <p>The files are here:</p>
                             <ul>
@@ -212,7 +221,7 @@
                     <div class="panel panel-default">
                         <div class="panel-heading"><h3 class="panel-title"><a href="https://github.com/berserck/ImageRotate" ><i class="fa fa-github"></i> Rotate photos in mac OS X </a></h3></div>
                         <div class="panel-body">
-                            <p>It will rotate the image left or right (it is a service, you need to extract file to <code>$HOME/Library/Services/</code>)</p>
+                            <p class="lead">It will rotate the image left or right</p><p> (it is a service, you need to extract file to <code>$HOME/Library/Services/</code>)</p>
                             <ul>
                                 <li><a href="http://dl.dropbox.com/u/6205438/mySoft/macOSx/ImageServices/RotateRight.tgz">Rotate Right</a></li>
                                 <li><a href="http://dl.dropbox.com/u/6205438/mySoft/macOSx/ImageServices/RotateLeft.tgz">Rotate Left</a></li>
