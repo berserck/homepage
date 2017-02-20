@@ -59,6 +59,7 @@
 
         body {
             position: relative;
+            background: url("/img/ba.png" );
         }
 
         /* active & hover links */
@@ -86,6 +87,10 @@
         footer {
             text-align:center;
             font-size: x-small;
+        }
+
+        .fa-linkedin {
+            color: #0076b7;
         }
     </style>
 
@@ -139,7 +144,7 @@
                         <div class="panel-heading"><h3 class="panel-title">Important Links</h3></div>
                         <div class="panel-body">
                             <ul>
-                                <li><i class="fa fa-linkedin" style="color:#0076b7" aria-hidden="true"></i> <a href="https://ch.linkedin.com/in/pedro-parracho-154a89"> Linkedin profile</a> </li>
+                                <li><i class="fa fa-linkedin" aria-hidden="true"></i> <a href="https://ch.linkedin.com/in/pedro-parracho-154a89"> Linkedin profile</a> </li>
                                 <li><i class="fa fa-github"  aria-hidden="true"></i><a href="https://github.com/berserck"> My github page </a></li>
                                 <li><i class="fa fa-github"  aria-hidden="true"></i><a href="http://resume.github.io/?berserck"> My github resume </a></li>
                                 <li><a href="https://ithaka.parracho.tk">Weather balloon: Ithaka project</a></li>
@@ -150,6 +155,7 @@
                         </div>
                     </div>
                 </div>
+
                 <div class="col-xs-12 col-sm-8">
                     <div class="page-header"><h1 id="work" class="text-primary">Work projects</h1></div>
                 </div>
@@ -162,15 +168,43 @@
                             <a href="http://demo.deram.com/GenericSigmaTreasury_V2.9/Account/login.aspx"> Sigma CTRM</a></h3>
                         </div>
                         <div class="panel-body">
+                            <p class="lead">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.
+
+                            </p>
+                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.
+
+                            </p>
                             <a href="http://demo.deram.com/GenericSigmaTreasury_V2.9/Account/login.aspx">Demo website</a>
                             <p></p>
                         </div>
                     </div>
                 </div>
 
+                <div class="col-xs-12 col-sm-8 col-sm-push-1">
+                    <div class="page-header"><h2 id="work-bank-reconciliation">Bank Position Reconciliation</h2></div>
+                </div>
+                <div class="col-xs-12 col-sm-8 col-sm-push-2">
+                    <div class="panel panel-default">
+                        <div class="panel-heading"><h3 class="panel-title">
+                            <a href="http://demo.deram.com/BankPositionReconciliation/">Bank Position Reconciliation</a></h3>
+                        </div>
+                        <div class="panel-body">
+                            <p class="lead">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.
+
+                            </p>
+                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.
+
+                            </p>
+                            <a href="http://demo.deram.com/BankPositionReconciliation/">Demo website</a>
+                            <p></p>
+                        </div>
+                    </div>
+                </div>
+
+
 
                 <div class="col-xs-12 col-sm-8">
-                    <div class="page-header"><h1 id="projects" class="text-primary">My Projects</h1></div>
+                    <div class="page-header"><h1 id="projects" class="text-primary">Personal projects</h1></div>
                 </div>
 
                 <div class="col-xs-12 col-sm-8 col-sm-push-1">
@@ -317,7 +351,11 @@
                 <li class="active"><a href="#aboutme">About me</a></li>
                 <li ><a href="#links">Links</a></li>
                 <li ><a href="#work">Work projects</a></li>
-                <li><a href="#projects">Projects</a>
+                <ul class="nav nav-stacked">
+                    <li><a href="#work-ctrm">Sigma CTRM</a></li>
+                    <li><a href="#work-bank-reconciliation">Bank Position Reconciliation</a></li>
+                </ul>
+                <li><a href="#projects">Personal projects</a>
                     <ul class="nav nav-stacked">
                         <li><a href="#projects-symfony">Currency Statistics: Test Symfony</a></li>
                         <li><a href="#projects-macos">MacOS X: Image manipulation</a></li>
@@ -336,6 +374,7 @@
     <div class="container">
         <div class="col-xs-12">
             <p>Last changed 2017.01.24 by Pedro Parracho</p>
+            <p> <a href="https://www.toptal.com/designers/subtlepatterns/connected/">Background</a> licence <a href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a> - Subtle Patterns © <a href="https://www.toptal.com/designers"> Toptal Designers</a></p>
         </div>
     </div>
 </footer>
