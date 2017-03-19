@@ -1,0 +1,137 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+	<title></title>
+
+<script language="javascript">
+<!--
+
+function CycleURLs(type){
+//	document.write("Building CycleURLs of Type"+ type);
+	
+	this.Type=type;
+	this.urls=new Array (
+	//	"https://cmswbm.web.cern.ch/cmswbm/cmsdb/servlet/PageZero",
+	//	"http://op-webtools.web.cern.ch/op-webtools/vistar/vistars.php?usr=LHC1",
+		type+"Status0_web.png",
+		type+"Status1_web.png",
+		type+"Status2_web.png"
+		);
+
+	this.numUrls=this.urls.length;
+	this.curUrl=0;
+	
+	this.paused=false;
+	
+	//methods
+	this.nextPicture = nextPicture;
+	this.toggleCycling = toggleCycling;
+	this.swapPicture = swapPicture;
+	this.timer = setTimeout("this.swapPicture()", 500);
+	this.reset = reset;
+}	
+	
+function nextPicture()
+{
+	if( this.curUrl < 0 ) this.curUrl = this.curUrl + this.numUrls;
+		this.curUrl = (this.curUrl + 1) % this.numUrls;
+		if (this.urls[this.curUrl])  {
+		//	window.alert("Next URL: "+ this.urls[this.curUrl]);
+		var frame=document.getElementById("urlFrame"+this.Type);
+		//window.alert("found " +frame.src + "\nReplacing by:" +this.urls[this.curUrl]);
+		if (frame) {
+				frame.src=this.urls[this.curUrl];
+		}
+		var link=document.getElementById("urlLink"+this.Type);
+		//document.write(link);
+		if (link) {
+			link.href=this.urls[this.curUrl];
+			link.innerHTML="["+this.urls[this.curUrl]+"]";
+		}
+
+	}
+}
+
+function swapPicture()
+{
+  if (!this.paused) {
+    this.nextPicture();
+    if (this.urls[this.curUrl])  {
+      this.timer = setTimeout(this.Type+".swapPicture()", 20000);
+      return;
+    }    
+   } 
+   
+   this.timer = setTimeout(this.Type+".swapPicture()", 3000);
+
+}
+
+function toggleCycling()
+{          
+	this.paused = !this.paused;
+	var button=k=document.getElementById("pauseButton"+this.Type);
+	button.innerHTML= this.paused ? "[resume]" : "[pause]";
+}
+
+function reset()
+{
+	this.curUrl=0;
+	if(this.paused){ this.toggleCycling();}
+	//this.paused=false;
+	clearTimeout(this.timer);
+	setTimeout(this.Type+".swapPicture()", 10);
+}
+
+-->  
+</script>
+
+</head>
+
+<body lang="en-us">
+<script language="javascript">
+<!--
+synch = new CycleURLs("synch");
+occ = new CycleURLs("occ");
+
+setTimeout("synch.swapPicture()", 500);
+setTimeout("occ.swapPicture()", 700);
+
+function resync()
+{
+	synch.reset();
+	occ.reset();
+}
+
+-->
+</script>
+
+<table border="1" width="100%">
+<tr>
+<td>
+<a id="urlLinksynch" href="">[current link]</a>
+<a onclick="synch.toggleCycling()" id="pauseButtonsynch">[pause]</a>
+<a onclick="synch.nextPicture()">[next]</a>
+<a onclick="synch.curUrl = synch.curUrl - 2; synch.nextPicture()">[previous]</a>
+
+<a onclick="resync()">[sync]</a>
+
+</td>
+</tr><tr>
+  <td><iframe name="urlFramesynch" id="urlFramesynch" src="" width="100%" height="100%"></iframe></td>
+ </tr><tr>
+ 
+ <td>
+ <a id="urlLinkocc" href="">[current link]</a>
+ <a onclick="occ.toggleCycling()" id="pauseButtonocc">[pause]</a>
+ <a onclick="occ.nextPicture()">[next]</a>
+ <a onclick="occ.curUrl = occ.curUrl - 2; occ.nextPicture()">[previous]</a>
+ </td>
+ </tr><tr> 
+ <td><iframe name="urlFrame" id="urlFrameocc" src="" width="100%" height="100%"></iframe></td>
+</tr>
+</table>
+
+
+</body>
+</html>
