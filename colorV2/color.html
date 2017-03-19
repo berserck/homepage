@@ -1,0 +1,36 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en">
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+        <script type="text/JavaScript" src="color.js"></script>
+        <title>ECAL DB GUI Diff colorizer</title>
+    </head>
+    <body>
+        <table>
+            <tr>
+                <td>
+        <button onclick="color()">Color this</button>
+                </td>
+                <td> Copy this to clipboard and paste on e-log</td>
+            </tr>
+            <tr>
+                <td>
+        <textarea rows="40" cols="50" name="ori_text" id="textInput"
+                  placeholder="Enter text here... "></textarea></td>
+            <td>
+                <textarea rows="40" cols="50" readonly id="textOutput"
+                  placeholder="Color diff here..."></textarea>
+            </td>
+            </tr>
+        </table>
+<!--         <button onclick="copyToClipboard()">
+            Copy to clipboard
+        </button> -->
+        <h1> Result will look like this:</h1>
+        <p id="result"></p>
+    </body>
+</html>
+
+
+

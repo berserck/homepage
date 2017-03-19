@@ -1,0 +1,67 @@
+all: SRP-ZeroSuppress (8901), ecal_run_configuration_dat (16048), ecal_sequence_dat (18903), ecal_cycle_dat (20822), ecal_run_configuration_dat (16049), ecal_sequence_dat (18905), ecal_cycle_dat (20824)
+
+--- ecal_srp_configuration SRP-ZeroSuppress (8900)
++++ ecal_srp_configuration SRP-ZeroSuppress (8901)
+ {
+-  "db_timestamp": "2014-08-06T17:03:53.643879",
++  "db_timestamp": "2014-08-12T22:05:55.667184",
+   "automatic_masks": 0,
+
+   "dummymode": 0,
+-  "srp0bunchadjustposition": 0,
++  "srp0bunchadjustposition": 3435,
+   "srp_tag": "SRP-ZeroSuppress",
+
+--- run ecal_run_configuration_dat (16022)
++++ run ecal_run_configuration_dat (16048)
+ {
+-  "db_timestamp": "2014-08-06T17:03:53.890701",
++  "db_timestamp": "2014-08-12T22:05:55.911641",
+   "trg_mode": null,
+   "usage_status": "GLOBAL RUNS",
+-  "version": 2,
++  "version": 3,
+   "run_type_def_id": 11,
+   "tag": "ForceZeroSupression",
+-  "defaults": 20722,
++  "defaults": 20822,
+   "num_of_events": 0,
+
+   "run_mode_def_id": 2,
+-  "description": "Changed SRP configuration to mask only TCCEE"
++  "description": "srp0bunchadjustposition -> 3435 as in MiniDAQ-SR"
+ }
+
+--- run.sequence_0.cycle_0 ecal_cycle_dat (20722)
++++ run.sequence_0.cycle_0 ecal_cycle_dat (20822)
+   "cycle_num": 0,
+-  "srp_configuration_id": 8900,
++  "srp_configuration_id": 8901,
+   "tag": "Cosmics-SR.Default",
+
+--- run_1 ecal_run_configuration_dat (16042)
++++ run_1 ecal_run_configuration_dat (16049)
+ {
+-  "db_timestamp": "2014-08-08T18:45:16.152195",
++  "db_timestamp": "2014-08-12T22:05:56.019945",
+   "trg_mode": null,
+   "usage_status": "MINIDAQ",
+-  "version": 96,
++  "version": 97,
+   "run_type_def_id": 41,
+   "tag": "MiniDAQ-Test",
+-  "defaults": 20774,
++  "defaults": 20824,
+   "num_of_events": 0,
+
+   "run_mode_def_id": 2,
+-  "description": "Fix TTCci config, there was a typo in the Bgo name of Resynch instead of Resync"
++  "description": "srp0bunchadjustposition -> 3435 as in MiniDAQ-SR"
+ }
+
+--- run_1.sequence_0.cycle_0 ecal_cycle_dat (20774)
++++ run_1.sequence_0.cycle_0 ecal_cycle_dat (20824)
+   "cycle_num": 0,
+-  "srp_configuration_id": 8900,
++  "srp_configuration_id": 8901,
+   "tag": "MiniDAQ-SR.Default",
