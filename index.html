@@ -121,6 +121,41 @@
 
 <body data-spy="scroll" data-target="#myScrollspy" data-offset="50">
 
+
+    <!-- Modal -->
+    <div class="modal fade" id="ModalGallery" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+         <div class="row">
+            <div class="col-md-10 col-md-offset-1">
+        <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        </div>
+
+                <img id="modal-gallery-image" class="img-responsive" src="http://upload.wikimedia.org/wikipedia/commons/7/78/1997_Fiat_Panda.JPG">
+            </div>
+        </div>
+        <!--
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+                </div>
+                <div class="modal-body">
+                    <img id="modal-gallery-image" class="img-responsive" src="http://upload.wikimedia.org/wikipedia/commons/7/78/1997_Fiat_Panda.JPG">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+-->
+    </div>
+
+
+
+
+
+
     <div class="bg"></div>
     <header class="jumbotron">
         <div class="container">
@@ -203,7 +238,10 @@
                                 <a href="http://demo.deram.com/GenericSigmaTreasury_V2.9/Account/login.aspx"> Sigma CTRM</a></h3>
                                 </div>
                                 <div class="panel-body">
-                                    <img src="img/CTRM_boat_report.png" alt="Sigma CTRM" class="img-responsive img-thumbnail img-screenshot pull-right">
+                                    <a href="#" data-toggle="modal" data-target="#ModalGallery" data-gallery="ctrm">
+                                        <img src="img/CTRM_boat_report.png" alt="Sigma CTRM" class="img-responsive img-thumbnail img-screenshot pull-right">
+                                    </a>
+
                                     <p class="lead"> Software for managing commodities trade finance.</p>
                                     <p>Software capable o tracing deal-sheets, contracts, operations, invoices loans and hedges related with the trading of commodities.</p>
                                     <p>The software contains a big number of reports allowing to know the day-by-day position of the trader.</p>
@@ -228,7 +266,10 @@
                                 <a href="http://demo.deram.com/BankPositionReconciliation/">Bank Position Reconciliation</a></h3>
                                 </div>
                                 <div class="panel-body">
-                                    <img src="img/bank_Position_reconciliation.png" class="img-responsive img-thumbnail img-screenshot pull-left">
+                                    <a href="#" data-toggle="modal" data-target="#ModalGallery" data-gallery="bpr">
+                                        <img src="img/bank_Position_reconciliation.png" class="img-responsive img-thumbnail img-screenshot pull-left">
+                                    </a>
+                                    
                                     <p class="lead">Reporting on client portfolio position</p>
                                     <p>This software is a prototype that produces a report on the client portfolio position in several banks, it does breakdown by currency, market, type of instruments.</p>
                                     <p>It also produces the report on the past performance of the portfolios, together with a small risk analysis.</p>
@@ -253,7 +294,10 @@
                                 ECAL DCC monitoring page</h3>
                                 </div>
                                 <div class="panel-body">
-                                    <img src="img/DCC_xmas_1.png" class="img-responsive img-thumbnail img-screenshot pull-right">
+                                    <a href="#" data-toggle="modal" data-target="#ModalGallery" data-gallery="xmas">
+                                        <img src="img/xmas_DCC.png" class="img-responsive img-thumbnail img-screenshot pull-right">
+                                    </a>
+                                    
                                     <p class="lead">Monitoring of the data acquisition hardware of <a href="http://cms.web.cern.ch/news/electromagnetic-calorimeter">CMS ECAL</a></p>
                                     <p>This software is used to monitor the status of the data acquisition system of the detector <a href="http://cms.web.cern.ch/news/electromagnetic-calorimeter">ECAL</a> on the experiment <a href="http://cms.web.cern.ch/news/what-cms">CMS</a> located at <a href="https://home.cern/">CERN</a>.</p>
                                     <p>The application subscribes to the status stream published by the various hardware supervisor applications, and report the global status to the user, allowing for fast identification and diagnose of problems.</p>
@@ -276,7 +320,10 @@
                                     <h3 class="panel-title">oSLB software suite</h3>
                                 </div>
                                 <div class="panel-body">
-                                    <img src="img/SLB_Tester_GUI.png" class="img-responsive img-thumbnail img-screenshot pull-left">
+                                    <a href="#" data-toggle="modal" data-target="#ModalGallery" data-gallery="slb">
+                                        <img src="img/SLB_Tester_GUI.png" class="img-responsive img-thumbnail img-screenshot pull-left">
+                                    </a>
+                                    
                                     <p class="lead">Package of software from the control of the the optical Synchronization and Link Board (<a href="http://iopscience.iop.org/article/10.1088/1748-0221/8/02/C02036/pdf">oSLB</a>) </p>
                                     <p>The synchronization link boards implement the synchronization of electromagnetic and hadronic trigger primitives at the LHC frequency (40.08 MHz) and its transmission to the Regional Calorimeter Trigger. Druing the calorimeter trigger upgrade the original SLBs (copper links @ 1.2Gb/s) were replaced by oSLBS (optical connection @ 4.8 Gb/s)</p>
                                     <p>The suit was composed of the drivers for SLB/oSLB + tester board, GUI applications for operation and production tests and ths number of command line tools.</p>
@@ -305,7 +352,10 @@
                                     <h3 class="panel-title"><a href="https://github.com/berserck/curstat" >
                             <i class="fa fa-github"> </i> github</a> & <a href="https://curstat.parracho.tk/">demo</a></h3></div>
                                 <div class="panel-body">
-                                    <img src="img/curstat.png" class="img-responsive img-thumbnail img-screenshot pull-right">
+                                    <a href="#" data-toggle="modal" data-target="#ModalGallery" data-gallery="curstat">
+                                        <img src="img/curstat.png" class="img-responsive img-thumbnail img-screenshot pull-right">
+                                    </a>
+                                    
                                     <p class="lead">This is a small application that will query the API <a href="http://fixer.io/">api.fixer.io</a> for the Forex rates and do some data manipulation with it.</p>
 
                                     <p>I wanted the checkout the <a href="https://symfony.com/">symfony</a> framework, to see how the basic setup was done and how long to get a basic website up. In a couple of days I managed to deploy this small toy application that will collect the exchange rate of several currencies for the last 5 working days and it will calculate in this time what was the maximum, the minimum and the average value of the exchange rate.</p>
@@ -510,6 +560,47 @@
             var scrolled = $(window).scrollTop();
             $('.bg').css('height', (jumboHeight - scrolled) + 'px');
         }
+
+        var galleryData = {
+            'ctrm': {
+                images: [
+                    'img/CTRM_boat_report.png',
+                    'img/CTRM_Futures.png',
+                    'img/CTRM_Loans.png'
+                ]
+            },
+            'bpr': {
+                images: [
+                    'img/bank_Position_reconciliation.png'
+                ]
+            },
+            'xmas': {
+                images: [
+                    'img/xmas_DCC.png'
+                ]
+            },
+            'slb': {
+                images: [
+                    'img/SLB_GUI.png',
+                    'img/SLB_Tester_GUI.png'
+                ]
+            },
+            'curstat': {
+                images: [
+                    'img/curstat.png'
+                ]
+            }
+        }
+
+        $('#ModalGallery').on('show.bs.modal', function(event) {
+            var button = $(event.relatedTarget) // Button that triggered the modal
+            var recipient = button.data('gallery') // Extract info from data-* attributes
+            var modal = $(this)
+            console.log(galleryData[recipient].images[0]);
+            modal.find("#modal-gallery-image").attr("src", galleryData[recipient].images[0])
+            console.log(modal.find("#modal-gallery-image").attr("src"))
+
+        })
 
         $(window).scroll(function() {
             parallax();
