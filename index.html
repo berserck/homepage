@@ -112,11 +112,11 @@
         }
 
         .carousel-control {
-            color: var(--main-color);
+            /*color: var(--main-color);*/
             background-image: none !important;
         }
         .carousel-control:hover {
-            color: var(--main-color);
+            /*color: var(--main-color);*/
             background-image: none !important;
         }
         .carousel-indicators li {
@@ -628,6 +628,7 @@
                 node.className +=" active";
             }
             var img = document.createElement("img");
+            img.className = "img-responsive center-block";
             img.setAttribute("src", l[i]);
             node.append(img);
             slides.append(node);
