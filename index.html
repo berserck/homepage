@@ -174,13 +174,13 @@
 </header>
 
 <div class="container">
-    <div class="row">
+    <div class="row" id="main-content">
 
         <div class="col-xs-12 col-sm-10">
             <div class="row">
                 <div class="col-xs-12">
-                    <div id="aboutme" class="page-header">
-                        <h1 class="text-primary">About me</h1> </div>
+                    <div class="page-header">
+                        <h1 id="aboutme" class="text-primary">About me</h1> </div>
                 </div>
                 <div class="col-xs-12 col-sm-10 col-sm-offset-2">
                     <p class="lead text-justify">Software engineer with 14+ years of dedication to automating everything and producing clean, efficient, understandable and documented code.
@@ -194,8 +194,8 @@
 
 
                 <div class="col-xs-12">
-                    <div id="links" class="page-header">
-                        <h1 class="text-primary">Links</h1></div>
+                    <div class="page-header">
+                        <h1 id="links" class="text-primary">Links</h1></div>
                 </div>
 
                 <div class="row">
@@ -363,6 +363,7 @@
                                 </a>
                                 <p class="lead">Small app to get a random quote</p>
                                 <p>I wrote this app as part of the <a href="https://www.freecodecamp.com/">free code camp</a> course. When the user presses the button "Get New Quote" the app queries the API <a href="https://quotesondesign.com">https://quotesondesign.com</a> and shows a random quote to the user. When the user presses the twitter button, the quote is tweeted.</p>
+                                <p>I used JavaScript, <a href="https://getbootstrap.com/">Bootstrap</a>, <a href="https://jquery.com/">jQuery</a> and <a href="https://fontawesome.com/">Font Awsome</a> for this project.</p>
                                 <p> The source code can be found in <a href="https://codepen.io/berserck/pen/evqLWg">codepen</a>.</p>
                             </div>
                         </div>
@@ -549,6 +550,7 @@
             </div>
         </div>
 
+<!--
         <nav class="hidden-xs col-sm-2 bs-docs-sidebar" id="myScrollspy">
             <ul id="sidebar" class="nav nav-stacked fixed" data-spy="affix">
                 <li class="active"><a href="#aboutme">About me</a></li>
@@ -573,6 +575,7 @@
                 <li><a href="#other">Other</a></li>
             </ul>
         </nav>
+-->
 
     </div>
 </div>
@@ -661,7 +664,6 @@
         }
     }
 
-
     $('#ModalGallery').on('show.bs.modal', function(event) {
         var button = $(event.relatedTarget); // Button that triggered the modal
         var recipient = button.data('gallery'); // Extract info from data-* attributes
@@ -682,8 +684,39 @@
 
     
     $(function() {
-    console.log( "ready!" );
+        console.log( "ready!" );
+        var nav = document.createElement('nav')
+        nav.classList.add("hidden-xs", "col-sm-2", "bs-docs-sidebar");
+        nav.setAttribute('id', 'myScrollspy');
+        // get sections
+        var sections = $(".page-header > h1");
+        console.log("sections length:", sections.length);
+        if( sections.length > 0) {
+            var list = document.createElement('ul');
+            list.setAttribute('id', 'sidebar');
+            list.classList.add("nav", "nav-stacked", "fixed");
+            list.setAttribute("data-spy", "affix")
+            sections.each( function(number, element){
+                addListItem(list, '#'+element.id, element.innerHTML);
+                console.log(number, element, element.innerHTML, element.id);
+            });
+            nav.appendChild(list);
+        }
+        //console.log($(".page-header > h1"));
+        
+        $("#main-content").append(nav);
 });
+ 
+    function addListItem(list, ref, text){
+        var listItem = document.createElement('li');
+        listItem.innerHTML = `<a href='${ref}'>${text}</a>`;
+//        var link = document.createElement('a');
+//        link.setAttribute('href', ref);
+//        link.innerHTML = text;
+//        listItem.appendChild(link);
+        list.appendChild(listItem);
+    }
+    
     
 </script>
 </body>
