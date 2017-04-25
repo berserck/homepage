@@ -351,7 +351,32 @@
                             <h1 id="projects" class="text-primary">Personal projects</h1>
                         </div>
 
+                        <section class="row subsection">
+                            <div class="col-xs-12 col-sm-offset-1">
+                                <div class="page-header">
+                                    <h2 id="projects-pgweather">PG Weather</h2>
+                                </div>
+                            </div>
 
+                            <div class="col-xs-12 col-sm-11 col-sm-offset-1">
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h3 class="panel-title"><a href="https://codepen.io/berserck/full/bWVZQw/" >
+                                    <i class="fa fa-codepen" aria-hidden="true"></i> Codepen demo</a></h3></div>
+                                    <div class="panel-body">
+                                        <a href="#" data-toggle="modal" data-target="#ModalGallery" data-gallery="fcc-weather">
+                                            <img src="img/pgWeather.png" class="img-responsive img-thumbnail img-screenshot pull-left">
+                                        </a>
+                                        <p class="lead">Small app to get a current weather at your location</p>
+                                        <p>I wrote this app as part of the <a href="https://www.freecodecamp.com/">free code camp</a> course. When the user visits the page, the app queries the API <a href="https://ipinfo.io">https://ipinfo.io</a> to get the location, then it queries the <a href="https://www.weatherbit.io/">Weatherbit.io</a> API and shows the current temperature and weather conditions for the closest town found in the API. The app also has a button in the temperature unit to convert between Celsius and Fahrenheit</p>
+                                        <p>For this project I used JavaScript, <a href="https://getbootstrap.com/">Bootstrap</a>, <a href="https://jquery.com/">jQuery</a> and <a href="https://fontawesome.com/">Font Awsome</a> for this project.</p>
+                                        <p> The source code can be found in <a href="https://codepen.io/berserck/pen/bWVZQw">codepen</a>.</p>
+                                        I also have a version using the <a href="http://openweathermap.org/">openweathermap.org</a> API as the data source for the weather, source code can be found in this <a href="https://codepen.io/berserck/pen/vmEqaL">codepen</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        
                         <section class="row subsection">
                             <div class="col-xs-12 col-sm-offset-1">
                                 <div class="page-header">
@@ -362,11 +387,11 @@
                             <div class="col-xs-12 col-sm-11 col-sm-offset-1">
                                 <div class="panel panel-default">
                                     <div class="panel-heading">
-                                        <h3 class="panel-title"><a href="https://github.com/berserck/curstat" >
+                                        <h3 class="panel-title"><a href="https://codepen.io/berserck/full/evqLWg/" >
                                     <i class="fa fa-codepen" aria-hidden="true"></i> Codepen demo</a></h3></div>
                                     <div class="panel-body">
                                         <a href="#" data-toggle="modal" data-target="#ModalGallery" data-gallery="fcc-quote">
-                                            <img src="img/PGquote.png" class="img-responsive img-thumbnail img-screenshot pull-right">
+                                            <img src="img/pgQuote.png" class="img-responsive img-thumbnail img-screenshot pull-right">
                                         </a>
                                         <p class="lead">Small app to get a random quote</p>
                                         <p>I wrote this app as part of the <a href="https://www.freecodecamp.com/">free code camp</a> course. When the user presses the button "Get New Quote" the app queries the API <a href="https://quotesondesign.com">https://quotesondesign.com</a> and shows a random quote to the user. When the user presses the twitter button, the quote is tweeted.</p>
@@ -391,7 +416,7 @@
                                 <div class="panel panel-default">
                                     <div class="panel-heading">
                                         <h3 class="panel-title"><a href="https://github.com/berserck/curstat" >
-                                    <i class="fa fa-github"> </i> github</a> & <a href="https://curstat.parracho.tk/">demo</a></h3></div>
+                                    <i class="fa fa-github"> </i> github</a> &amp; <a href="https://curstat.parracho.tk/">demo</a></h3></div>
                                     <div class="panel-body">
                                         <a href="#" data-toggle="modal" data-target="#ModalGallery" data-gallery="curstat">
                                             <img src="img/curstat.png" class="img-responsive img-thumbnail img-screenshot pull-right">
@@ -650,7 +675,10 @@
                 ]
             },
             'fcc-quote': {
-                images: ['img/PGquote.png']
+                images: ['img/pgQuote.png']
+            },
+            'fcc-weather': {
+                images: ['img/pgWeather.png']
             }
         }
 
