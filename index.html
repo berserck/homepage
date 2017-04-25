@@ -351,6 +351,37 @@
                             <h1 id="projects" class="text-primary">Personal projects</h1>
                         </div>
 
+                        
+                         <section class="row subsection">
+                            <div class="col-xs-12 col-sm-offset-1">
+                                <div class="page-header">
+                                    <h2 id="projects-pgwiki">PG Wikipedia Search</h2>
+                                </div>
+                            </div>
+
+                            <div class="col-xs-12 col-sm-11 col-sm-offset-1">
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h3 class="panel-title"><a href="https://codepen.io/berserck/full/jmPQVy/" >
+                                    <i class="fa fa-codepen" aria-hidden="true"></i> Codepen demo</a></h3></div>
+                                    <div class="panel-body">
+                                        <a href="#" data-toggle="modal" data-target="#ModalGallery" data-gallery="fcc-wikisearch">
+                                            <img src="img/pgWikipediaSearch.png" class="img-responsive img-thumbnail img-screenshot pull-right">
+                                        </a>
+                                        <p class="lead">Small app to search wikipedia</p>
+                                        <p>I wrote this app as part of the <a href="https://www.freecodecamp.com/">free code camp</a> course.</p>
+                                        <p> When the user visits the page has the choice to search for wikipedia articled or visit a random one. </p>
+                                        <p>While the user is typing, the search bar will query wikipedi and offer suggestions. When the user finishes typing he can press the Search button and wikipedia is queried again, this type to supply the summary for the articles found, if teh user selects one of the articles he is lead to the wikipedia page of the article.
+                                            </p>
+                                        <p>For this project I used JavaScript, <a href="https://angularjs.org/">AngularJS</a>, and <a href="https://material.angularjs.org/latest/">AngularJS Material</a> for this project.</p>
+                                        <p> The source code can be found in <a href="https://codepen.io/berserck/pen/jmPQVy">codepen</a>.</p>
+                                       
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        
+                        
                         <section class="row subsection">
                             <div class="col-xs-12 col-sm-offset-1">
                                 <div class="page-header">
@@ -368,10 +399,11 @@
                                             <img src="img/pgWeather.png" class="img-responsive img-thumbnail img-screenshot pull-left">
                                         </a>
                                         <p class="lead">Small app to get a current weather at your location</p>
-                                        <p>I wrote this app as part of the <a href="https://www.freecodecamp.com/">free code camp</a> course. When the user visits the page, the app queries the API <a href="https://ipinfo.io">https://ipinfo.io</a> to get the location, then it queries the <a href="https://www.weatherbit.io/">Weatherbit.io</a> API and shows the current temperature and weather conditions for the closest town found in the API. The app also has a button in the temperature unit to convert between Celsius and Fahrenheit</p>
+                                        <p>I wrote this app as part of the <a href="https://www.freecodecamp.com/">free code camp</a> course.</p>
+                                        <p> When the user visits the page, the app queries the API <a href="https://ipinfo.io">https://ipinfo.io</a> to get the location, then it queries the <a href="https://www.weatherbit.io/">Weatherbit.io</a> API and shows the current temperature and weather conditions for the closest town found in the API. The app also has a button in the temperature unit to convert between Celsius and Fahrenheit</p>
                                         <p>For this project I used JavaScript, <a href="https://getbootstrap.com/">Bootstrap</a>, <a href="https://jquery.com/">jQuery</a> and <a href="https://fontawesome.com/">Font Awsome</a> for this project.</p>
                                         <p> The source code can be found in <a href="https://codepen.io/berserck/pen/bWVZQw">codepen</a>.</p>
-                                        I also have a version using the <a href="http://openweathermap.org/">openweathermap.org</a> API as the data source for the weather, source code can be found in this <a href="https://codepen.io/berserck/pen/vmEqaL">codepen</a>
+                                        <p>I also have a version using the <a href="http://openweathermap.org/">openweathermap.org</a> API as the data source for the weather, source code can be found in this <a href="https://codepen.io/berserck/pen/vmEqaL">codepen</a>.</p>
                                     </div>
                                 </div>
                             </div>
@@ -394,7 +426,8 @@
                                             <img src="img/pgQuote.png" class="img-responsive img-thumbnail img-screenshot pull-right">
                                         </a>
                                         <p class="lead">Small app to get a random quote</p>
-                                        <p>I wrote this app as part of the <a href="https://www.freecodecamp.com/">free code camp</a> course. When the user presses the button "Get New Quote" the app queries the API <a href="https://quotesondesign.com">https://quotesondesign.com</a> and shows a random quote to the user. When the user presses the twitter button, the quote is tweeted.</p>
+                                        <p>I wrote this app as part of the <a href="https://www.freecodecamp.com/">free code camp</a> course.</p>
+                                        <p> When the user presses the button "Get New Quote" the app queries the API <a href="https://quotesondesign.com">https://quotesondesign.com</a> and shows a random quote to the user. When the user presses the twitter button, the quote is tweeted.</p>
                                         <p>I used JavaScript, <a href="https://getbootstrap.com/">Bootstrap</a>, <a href="https://jquery.com/">jQuery</a> and <a href="https://fontawesome.com/">Font Awsome</a> for this project.</p>
                                         <p> The source code can be found in <a href="https://codepen.io/berserck/pen/evqLWg">codepen</a>.</p>
                                     </div>
@@ -653,7 +686,11 @@
             },
             'fcc-weather': {
                 images: ['img/pgWeather.png']
+            },
+            'fcc-wikisearch': {
+                images: ['img/pgWikipediaSearch.png']
             }
+            
         }
 
         function addCarrousselIndicators(l) {
