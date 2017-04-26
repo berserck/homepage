@@ -179,7 +179,7 @@
     <div class="container">
         <div class="row" id="main-content">
 
-            <div class="col-xs-12 col-sm-10">
+            <div class="col-xs-12 col-sm-10" role="main">
                 <div class="row">
                     <section class="col-xs-12 section">
                         <div class="page-header">
@@ -629,7 +629,7 @@
 
                 </div>
             </div>
-
+            <div class="col-sm-2" role="complementary"></div>
 
         </div>
     </div>
@@ -743,7 +743,7 @@
 
         $(function() {
             var nav = document.createElement('nav')
-            nav.classList.add("hidden-xs", "col-sm-2", "bs-docs-sidebar");
+            nav.classList.add("hidden-xs", "bs-docs-sidebar");
             nav.setAttribute('id', 'myScrollspy');
             var sections = $("section.section");
             if (sections.length > 0) {
@@ -761,7 +761,8 @@
                 });
                 nav.appendChild(list);
             }
-            $("#main-content").append(nav);
+            $("[role='complementary']").append(nav);
+            
         });
         
         var listSectionProperties = {
