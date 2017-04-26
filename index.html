@@ -37,6 +37,7 @@
             --alternative-color: #f00;
             --lighter-color: #98adb3;
             --lighter-bg-color: #e6edef;
+            --jumbotron-height: 310px;
         }
         /* jumbotron*/
         
@@ -54,7 +55,7 @@
         }
         
         .jumbotron {
-            height: 310px;
+            height: var(--jumbotron-height);
             color: var(--lighter-color);
             text-shadow: white 1px 1px 3px;
             background: transparent;
@@ -73,6 +74,9 @@
             background-color: transparent;
             border-left: 2px solid var(--alternative-color);
         }
+        .bs-docs-sidebar .nav>li>a:hover {
+            border-left: 2px solid var(--lighter-color);
+        }
         /* nested links */
         
         .bs-docs-sidebar .nav .nav>li>a {
@@ -87,6 +91,11 @@
             font-size: 100%;
         }
         
+        .affix {
+            position: fixed;
+            top: calc(var(--jumbotron-height) + 20px);
+        }
+
         footer {
             text-align: center;
             font-size: x-small;
@@ -113,12 +122,10 @@
         }
         
         .carousel-control {
-            /*color: var(--main-color);*/
             background-image: none !important;
         }
         
         .carousel-control:hover {
-            /*color: var(--main-color);*/
             background-image: none !important;
         }
         
@@ -158,10 +165,6 @@
             </a>
         </div>
     </div>
-
-
-
-
 
 
     <div class="bg"></div>
@@ -646,9 +649,20 @@
     <script type="text/javascript">
         var jumboHeight = $('.jumbotron').outerHeight();
 
+        $(window).scroll(function() {
+            parallax();
+            navPosition();
+        });
+
         function parallax() {
             var scrolled = $(window).scrollTop();
             $('.bg').css('height', (jumboHeight - scrolled) + 'px');
+        }
+
+        function navPosition() {
+            var scrolled = $(window).scrollTop();
+            var pos = (jumboHeight - scrolled) > 0 ? (jumboHeight - scrolled) + 20 : 20;
+            $("nav").css('top', pos + 'px');
         }
 
         var galleryData = {
@@ -737,13 +751,11 @@
             addCarrousselSlides(galleryData[recipient].images);
         })
 
-        $(window).scroll(function() {
-            parallax();
-        });
+
 
         $(function() {
             var nav = document.createElement('nav')
-            nav.classList.add("hidden-xs", "bs-docs-sidebar");
+            nav.classList.add("hidden-xs", "hidden-sm", "hidden-print", "bs-docs-sidebar", "affix");
             nav.setAttribute('id', 'myScrollspy');
             var sections = $("section.section");
             if (sections.length > 0) {
@@ -767,8 +779,8 @@
         
         var listSectionProperties = {
             'id':'sidebar',
-            'classes': ["nav", "nav-stacked", "fixed"],
-            'dataprops': {"data-spy":"affix"}
+            'classes': ["nav", "nav-stacked"]
+            //,'dataprops': {"data-spy":"affix-top"}
         }
         
         var listSubsectionProperties = {
