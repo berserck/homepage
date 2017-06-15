@@ -721,12 +721,12 @@
             
         }
 
-        function addCarrousselIndicators(l) {
+        function addCarouselIndicators(l) {
             var indicators = $("#carousel-indicators");
             indicators.empty();
             for (i = 0; i < l.length; i++) {
                 var node = document.createElement("li");
-                node.setAttribute("data-slide-to", i);
+                node.setAttribute("data-slide-to", i.toString());
                 node.setAttribute("data-target", "#myCarousel");
                 if (i === 0) {
                     node.className = "active";
@@ -735,10 +735,10 @@
             }
         }
 
-        function addCarrousselSlides(l) {
+        function addCarouselSlides(l) {
             var slides = $("#carousel-inner");
             slides.empty();
-            for (i = 0; i < l.length; i++) {
+            for (var i = 0; i < l.length; i++) {
                 var node = document.createElement("div");
                 node.className = "item col-xs-10 col-xs-offset-1";
                 if (i === 0) {
@@ -760,24 +760,24 @@
             modal.find("#modal-gallery-image").attr("src", galleryData[recipient].images[0]);
             console.log(modal.find("#modal-gallery-image").attr("src"));
 
-            addCarrousselIndicators(galleryData[recipient].images);
-            addCarrousselSlides(galleryData[recipient].images);
+            addCarouselIndicators(galleryData[recipient].images);
+            addCarouselSlides(galleryData[recipient].images);
         })
 
 
-
+        // Generate the navigation bar
         $(function() {
             var nav = document.createElement('nav')
             nav.classList.add("hidden-xs", "hidden-sm", "hidden-print", "bs-docs-sidebar", "affix");
             nav.setAttribute('id', 'myScrollspy');
             var sections = $("section.section");
             if (sections.length > 0) {
-                var list = createlist(listSectionProperties);
+                var list = createList(listSectionProperties);
                 sections.find("h1").each(function(number, element) {
                     var item = addListItem(list, '#' + element.id, element.innerHTML);
                     var subsections = $(`section.section:eq(${number})`).find("section.subsection");
                     if (subsections.length > 0) {
-                        var subList = createlist(listSubsectionProperties);
+                        var subList = createList(listSubsectionProperties);
                         subsections.find("h2").each(function(number, element) {
                             var item = addListItem(subList, '#' + element.id, element.innerHTML);
                         });
@@ -808,7 +808,7 @@
         }
 
         
-        function createlist(prop){
+        function createList(prop){
             var list = document.createElement('ul');
             if(prop.hasOwnProperty('id')){
                 list.setAttribute(prop.id, 'sidebar');
