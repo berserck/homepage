@@ -368,8 +368,57 @@
                             <h1 id="projects" class="text-primary">Personal projects</h1>
                         </div>
 
-                        
-                         <section class="row subsection">
+                        <section class="row subsection">
+                            <div class="col-xs-12 col-sm-offset-1">
+                                <div class="page-header">
+                                    <h2 id="projects-pgtwitch">PG Twitch channels</h2>
+                                </div>
+                            </div>
+
+                            <div class="col-xs-12 col-sm-11 col-sm-offset-1">
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h3 class="panel-title"><a href="https://codepen.io/berserck/full/rmpOJx/">
+                                            <i class="fa fa-codepen" aria-hidden="true"></i> Codepen demo</a></h3></div>
+                                    <div class="panel-body">
+                                        <a href="#" data-toggle="modal" data-target="#ModalGallery"
+                                           data-gallery="fcc-twitch">
+                                            <img src="img/pgTwitch.png"
+                                                 class="img-responsive img-thumbnail img-screenshot pull-right">
+                                        </a>
+                                        <p class="lead">App to check twich channel status <a
+                                                href="https://codepen.io/berserck/full/rmpOJx/">Codepen demo</a></p>
+                                        <p>I wrote this app as part of the <a href="https://www.freecodecamp.com/">free
+                                            code camp</a> course.</p>
+                                        <p>This app allows the user to check for the status of
+                                            <a href="https://www.twitch.tv/">twitch</a> channels, when the user first
+                                            visits t
+                                            he page there is a number of predefined channels for which the status is
+                                            queried.</p>
+                                        <p>
+                                            The user has the possibility to add channels to the list. When a channel is
+                                            added,
+                                            the <a href="https://dev.twitch.tv/docs/v5/reference/streams/">twitch API</a>
+                                            is used to get the channel status, status message, channel image and channel
+                                            URL.
+
+                                        </p>
+                                        <p>Clicking on a channel will open a new window in the twich channel page.
+                                        </p>
+                                        <p>For this project I used JavaScript,
+                                            <a href="https://facebook.github.io/react">React</a>,
+                                            and <a href="http://materializecss.com/">Materialize</a>
+                                            for this project.</p>
+                                        <p> The source code can be found in <a
+                                                href="https://codepen.io/berserck/pen/rmpOJx">codepen</a>.</p>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+
+                        <section class="row subsection">
                             <div class="col-xs-12 col-sm-offset-1">
                                 <div class="page-header">
                                     <h2 id="projects-pgwiki">PG Wikipedia Search</h2>
@@ -713,10 +762,15 @@
                 images: ['img/pgQuote.png']
             },
             'fcc-weather': {
-                images: ['img/pgWeather.png']
+                images: ['img/pgWeather.png',
+                    'img/pgWeather_mobile.png']
             },
             'fcc-wikisearch': {
                 images: ['img/pgWikipediaSearch.png']
+            },
+            'fcc-twitch': {
+                images: ['img/pgTwitch.png',
+                'img/pgTwitch_mobile.png']
             }
             
         }
