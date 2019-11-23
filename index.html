@@ -152,7 +152,10 @@
             max-height: 80vh;
             /*padding-top: 10vh;*/
         }
-
+        
+        .panel-title .fa {
+            margin-right: 0.5em;            
+        }
     </style>
 
 </head>
@@ -375,6 +378,73 @@
                         <section class="row subsection">
                             <div class="col-xs-12 col-sm-offset-1">
                                 <div class="page-header">
+                                    <h2 id="projects-fotoselect">Foto-Select</h2>
+                                </div>
+                            </div>
+
+                            <div class="col-xs-12 col-sm-11 col-sm-offset-1">
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h3 class="panel-title"><a href="https://github.com/berserck/foto-select">
+                                            <i class="fa fa-github" aria-hidden="true"></i> GitHub repository</a></h3></div>
+                                    <div class="panel-body">
+                                        <a href="#" data-toggle="modal" data-target="#ModalGallery"
+                                           data-gallery="foto-select">
+                                            <img src="img/FotoSelect.PNG"
+                                                 class="img-responsive img-thumbnail img-screenshot pull-right">
+                                        </a>
+                                        <p class="lead">Application to help select photographs.</p>
+                                        <p>I wrote this application to help me select my fotos, I usualy have a source folder with all the fotos and I want to copy the fotos to two different folders.</p>
+                                        <p>This app will read all the images under the <b>Origin</b> folder and show them one-by-one. With navigation performed by the left and right arrow keys.</p>
+                                        <p>
+                                            The user can copy the shown foto to <b>Destination1</b> or <b>Destination2</b> by pressing the buttons 1 or 2 respectively.
+
+                                        </p>
+                                        <p>For this project I used <a href="https://en.wikipedia.org/wiki/Windows_Forms">windows forms</a>.</p>
+                                        <p> The source code can be found in <a
+                                                href="https://github.com/berserck/foto-select">github</a>.</p>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        
+                        <section class="row subsection">
+                            <div class="col-xs-12 col-sm-offset-1">
+                                <div class="page-header">
+                                    <h2 id="projects-fotosorter">Foto-Sorter</h2>
+                                </div>
+                            </div>
+
+                            <div class="col-xs-12 col-sm-11 col-sm-offset-1">
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h3 class="panel-title"><a href="https://github.com/berserck/FotoSorter">
+                                            <i class="fa fa-github" aria-hidden="true"></i> GitHub repository</a></h3></div>
+                                    <div class="panel-body">
+                                        <a href="#" data-toggle="modal" data-target="#ModalGallery"
+                                           data-gallery="foto-sorter">
+                                            <img src="img/FotoSorter.PNG"
+                                                 class="img-responsive img-thumbnail img-screenshot pull-right">
+                                        </a>
+                                        <p class="lead">Application to help sort photographs.</p>
+                                        <p>Small app to sort photographs</p>
+                                        <p>I wrote this app to help my mom to get her photographs in order, so it is very simple, with very few nobs.</p>
+                                        <p>
+                                            The user selects the <b>Origin</b> and <b>Destination</b> folders and the application will copy all the fotos found in <b>Origin</b> folder into <b>Destination</b>, separating the images in year/month folders, using the EXIF data.
+                                        </p>
+                                        <p>For this project I used Windows Presentation foundation (<a href="https://en.wikipedia.org/wiki/Windows_Presentation_Foundation">WPF</a>), <a href="https://en.wikipedia.org/wiki/Extensible_Application_Markup_Language">XAML</a> and  <a href="https://serilog.net/">Serilog</a>.
+                                        <p> The source code can be found in <a
+                                                href="https://github.com/berserck/FotoSorter">github</a>.</p>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        
+                        <section class="row subsection">
+                            <div class="col-xs-12 col-sm-offset-1">
+                                <div class="page-header">
                                     <h2 id="projects-pgtwitch">PG Twitch channels</h2>
                                 </div>
                             </div>
@@ -507,7 +577,7 @@
                         <!-- End of row -->
 
 
-                        <section class="row subsection">
+                        <!--<section class="row subsection">
                             <div class="col-xs-12 col-sm-offset-1">
                                 <div class="page-header">
                                     <h2 id="projects-symfony">curstat: Currency Statistics</h2>
@@ -538,7 +608,7 @@
                                     </div>
                                 </div>
                             </div>
-                        </section>
+                        </section>-->
                         <!-- End of row -->
 
                         <section class="row subsection">
@@ -777,8 +847,13 @@
             'fcc-twitch': {
                 images: ['img/pgTwitch.png',
                 'img/pgTwitch_mobile.png']
-            }
-            
+            },
+            'foto-select': {
+                images: ['img/FotoSelect.PNG']
+            },
+        'foto-sorter': {
+                images: ['img/FotoSorter.PNG']
+            },
         }
 
         function addCarouselIndicators(l) {
